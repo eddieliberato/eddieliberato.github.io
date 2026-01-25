@@ -6,8 +6,15 @@
     <description>Recent content on Edi Liberato blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://eddieliberato.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Some Cool Songs</title>
+      <link>https://eddieliberato.github.io/blog/2026-01-01-some-cool-songs/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://eddieliberato.github.io/blog/2026-01-01-some-cool-songs/</guid>
+      <description>&lt;p&gt;Hey Guys, the year is 2026 and I am bringing this blog back from the grave.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>A Collection of Cadquery Parametric Models (2018-2022)</title>
       <link>https://eddieliberato.github.io/blog/2022-06-26-cadquery-models-collection/</link>

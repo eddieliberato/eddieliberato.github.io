@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Engineering on Edi Liberato blog</title>
+    <link>https://eddieliberato.github.io/categories/engineering/</link>
+    <description>Recent content in Engineering on Edi Liberato blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://eddieliberato.github.io/categories/engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Direct Stiffness Method in Python: Trusses and Frames</title>
+      <link>https://eddieliberato.github.io/blog/2022-02-28-direct-stiffness-method/</link>
+      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://eddieliberato.github.io/blog/2022-02-28-direct-stiffness-method/</guid>
+      <description>&lt;p&gt;This post is about some finite element method code that I wrote back in 2014. I am sharing it here, even though I never finished the data visualization part I wanted back then.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

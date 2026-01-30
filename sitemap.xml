@@ -2,14 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://eddieliberato.github.io/tags/3d-printing/</loc>
+    <lastmod>2026-01-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://eddieliberato.github.io/blog/</loc>
-    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eddieliberato.github.io/tags/cadquery/</loc>
+    <lastmod>2026-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eddieliberato.github.io/categories/</loc>
-    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eddieliberato.github.io/</loc>
-    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eddieliberato.github.io/blog/2026-02-01-monitor-stand/</loc>
+    <lastmod>2026-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eddieliberato.github.io/categories/programming/</loc>
+    <lastmod>2026-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eddieliberato.github.io/tags/python/</loc>
+    <lastmod>2026-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eddieliberato.github.io/tags/</loc>
+    <lastmod>2026-01-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eddieliberato.github.io/tags/music/</loc>
     <lastmod>2026-01-01T00:00:00+00:00</lastmod>
@@ -20,22 +38,10 @@
     <loc>https://eddieliberato.github.io/blog/2026-01-01-some-cool-songs/</loc>
     <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://eddieliberato.github.io/tags/</loc>
-    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://eddieliberato.github.io/tags/3d-printing/</loc>
-    <lastmod>2022-06-26T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://eddieliberato.github.io/blog/2022-06-26-cadquery-models-collection/</loc>
     <lastmod>2022-06-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eddieliberato.github.io/tags/cad/</loc>
-    <lastmod>2022-06-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://eddieliberato.github.io/tags/cadquery/</loc>
-    <lastmod>2022-06-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://eddieliberato.github.io/categories/computer-aided-design/</loc>
     <lastmod>2022-06-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eddieliberato.github.io/blog/2022-03-10-jetson-nano/</loc>
@@ -44,13 +50,10 @@
     <loc>https://eddieliberato.github.io/blog/2022-02-28-direct-stiffness-method/</loc>
     <lastmod>2022-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://eddieliberato.github.io/categories/fea/</loc>
+    <loc>https://eddieliberato.github.io/categories/engineering/</loc>
     <lastmod>2022-02-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eddieliberato.github.io/tags/programming/</loc>
-    <lastmod>2022-02-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://eddieliberato.github.io/tags/python/</loc>
     <lastmod>2022-02-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eddieliberato.github.io/blog/2020-09-21-gears/</loc>

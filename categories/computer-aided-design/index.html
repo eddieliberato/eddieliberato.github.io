@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us"><head>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <title>Edi Liberato blog</title>
 
@@ -11,22 +11,33 @@
 
   <!-- plugins -->
   
-  <link rel="stylesheet" href="https://eddieliberato.github.io/plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="http://localhost:1313/plugins/bootstrap/bootstrap.min.css">
   
-  <link rel="stylesheet" href="https://eddieliberato.github.io/plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="http://localhost:1313/plugins/themify-icons/themify-icons.css">
   
 
   <!-- Main Stylesheet -->
   
-  <link rel="stylesheet" href="https://eddieliberato.github.io/scss/style.min.css" media="screen">
+  <link rel="stylesheet" href="http://localhost:1313/scss/style.min.css" media="screen">
 
   <!--Favicon-->
-  <link rel="shortcut icon" href="https://eddieliberato.github.io/images/favicon.png" type="image/x-icon">
-  <link rel="icon" href="https://eddieliberato.github.io/images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="http://localhost:1313/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="http://localhost:1313/images/favicon.png" type="image/x-icon">
 
   
 
+  
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+
 </head>
+
 <body>
 <!-- preloader start -->
 <div class="preloader">
@@ -38,8 +49,8 @@
   <div class="container">
     
     <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
-      <a class="navbar-brand mobile-view" href="https://eddieliberato.github.io/"><img class="img-fluid"
-          src="https://eddieliberato.github.io/images/logo.png" alt="Edi Liberato blog"></a>
+      <a class="navbar-brand mobile-view" href="http://localhost:1313/"><img class="img-fluid"
+          src="http://localhost:1313/images/logo.png" alt="Edi Liberato blog"></a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
         <i class="ti-menu"></i>
       </button>
@@ -63,14 +74,14 @@
           </ul>
         </div>
 
-        <a class="navbar-brand mx-auto desktop-view" href="https://eddieliberato.github.io/"><img class="img-fluid"
-            src="https://eddieliberato.github.io/images/logo.png" alt="Edi Liberato blog"></a>
+        <a class="navbar-brand mx-auto desktop-view" href="http://localhost:1313/"><img class="img-fluid"
+            src="http://localhost:1313/images/logo.png" alt="Edi Liberato blog"></a>
 
         <ul class="navbar-nav">
           
           
           <li class="nav-item">
-            <a class="nav-link" href="https://eddieliberato.github.io/about">About</a>
+            <a class="nav-link" href="http://localhost:1313/about">About</a>
           </li>
           
           
@@ -81,7 +92,7 @@
         <div class="search pl-lg-4">
           <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
           <div class="search-wrapper">
-            <form action="https://eddieliberato.github.io//search" class="h-100">
+            <form action="http://localhost:1313//search" class="h-100">
               <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
             </form>
             <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
@@ -104,157 +115,6 @@
         <div class="row">
           
           
-          <div class="col-md-6 mb-12">
-    <article class="card">
-        
-        <img src="https://eddieliberato.github.io/images/post/cadquery-collection/montage.svg" class="card-img-top" alt="A Collection of Cadquery Parametric Models (2018-2022)">
-        
-        <div class="card-body px-0">
-        
-        <a href="/categories/computer-aided-design"
-            class="text-primary">Computer aided design</a>
-        
-        <a href="https://eddieliberato.github.io/blog/2022-06-26-cadquery-models-collection/" class="h5 d-block my-3">A Collection of Cadquery Parametric Models (2018-2022)</a>
-        <div class="mb-3 post-meta">
-            <span>By Edi Liberato</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>26 June 2022</span>
-            
-        </div>
-        <p class="card-text"><p>The title says it all, but I will elaborate a bit more.</p></p>
-        <a href="https://eddieliberato.github.io/blog/2022-06-26-cadquery-models-collection/" class="btn btn-outline-primary">Read</a>
-        </div>
-    </article>
-</div>
-
-          
-          <div class="col-md-6 mb-12">
-    <article class="card">
-        
-        <img src="https://eddieliberato.github.io/images/post/jetson-nano-cover/jetson-cover.svg" class="card-img-top" alt="Jetson Nano Case">
-        
-        <div class="card-body px-0">
-        
-        <a href="/categories/computer-aided-design"
-            class="text-primary">Computer aided design</a>
-        
-        <a href="https://eddieliberato.github.io/blog/2022-03-10-jetson-nano/" class="h5 d-block my-3">Jetson Nano Case</a>
-        <div class="mb-3 post-meta">
-            <span>By Edi Liberato</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>10 March 2022</span>
-            
-        </div>
-        <p class="card-text"><p>Sometime ago I acquired a jetson nano 2gb SBC and after using it a bit I felt the need to <strong>overclock it</strong>. The problem is that it runs hot even at default clock speeds, so I needed a fan. But the fan needs to be mounted somewhere right?</p></p>
-        <a href="https://eddieliberato.github.io/blog/2022-03-10-jetson-nano/" class="btn btn-outline-primary">Read</a>
-        </div>
-    </article>
-</div>
-
-          
-          <div class="col-md-6 mb-12">
-    <article class="card">
-        
-        <img src="https://eddieliberato.github.io/images/post/f-rep-gears/liberatogear2-alpha.png" class="card-img-top" alt="f-rep Gears">
-        
-        <div class="card-body px-0">
-        
-        <a href="/categories/computer-aided-design"
-            class="text-primary">Computer aided design</a>
-        
-        <a href="https://eddieliberato.github.io/blog/2020-09-21-gears/" class="h5 d-block my-3">f-rep Gears</a>
-        <div class="mb-3 post-meta">
-            <span>By Edi Liberato</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>21 September 2020</span>
-            
-        </div>
-        <p class="card-text"><p>I&rsquo;ve been writing for blogs since 2009 and I always wanted to write about gears. Finally the time has come.</p></p>
-        <a href="https://eddieliberato.github.io/blog/2020-09-21-gears/" class="btn btn-outline-primary">Read</a>
-        </div>
-    </article>
-</div>
-
-          
-          <div class="col-md-6 mb-12">
-    <article class="card">
-        
-        <img src="https://eddieliberato.github.io/images/post/gomboc/gomboc.gif" class="card-img-top" alt="Gömböc">
-        
-        <div class="card-body px-0">
-        
-        <a href="/categories/computer-aided-design"
-            class="text-primary">Computer aided design</a>
-        
-        <a href="https://eddieliberato.github.io/blog/2020-08-12-gomboc/" class="h5 d-block my-3">Gömböc</a>
-        <div class="mb-3 post-meta">
-            <span>By Edi Liberato</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>12 August 2020</span>
-            
-        </div>
-        <p class="card-text"><p>One line of code and you have it!</p>
-<p>Weird? Cool? Wizardry?</p></p>
-        <a href="https://eddieliberato.github.io/blog/2020-08-12-gomboc/" class="btn btn-outline-primary">Read</a>
-        </div>
-    </article>
-</div>
-
-          
-          <div class="col-md-6 mb-12">
-    <article class="card">
-        
-        <img src="https://eddieliberato.github.io/images/post/dogbones/dogbones.svg" class="card-img-top" alt="ASTM D638 Tensile Test Specimens">
-        
-        <div class="card-body px-0">
-        
-        <a href="/categories/computer-aided-design"
-            class="text-primary">Computer aided design</a>
-        
-        <a href="https://eddieliberato.github.io/blog/2020-05-14-dogbones/" class="h5 d-block my-3">ASTM D638 Tensile Test Specimens</a>
-        <div class="mb-3 post-meta">
-            <span>By Edi Liberato</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>14 May 2020</span>
-            
-        </div>
-        <p class="card-text"><p>No need to say much about the classical ASTM D638 tensile test specimens AKA dogbones. Just a few remarks:</p></p>
-        <a href="https://eddieliberato.github.io/blog/2020-05-14-dogbones/" class="btn btn-outline-primary">Read</a>
-        </div>
-    </article>
-</div>
-
-          
-          <div class="col-md-6 mb-12">
-    <article class="card">
-        
-        <img src="https://eddieliberato.github.io/images/post/chess-set/chess_set.svg" class="card-img-top" alt="Cadquery Chess Set">
-        
-        <div class="card-body px-0">
-        
-        <a href="/categories/computer-aided-design"
-            class="text-primary">Computer aided design</a>
-        
-        <a href="https://eddieliberato.github.io/blog/2018-06-26-cadquery-chess-set/" class="h5 d-block my-3">Cadquery Chess Set</a>
-        <div class="mb-3 post-meta">
-            <span>By Edi Liberato</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>26 June 2018</span>
-            
-        </div>
-        <p class="card-text"><p>A weird project to test my new 3d printer: A chess set designed in cadquery.</p></p>
-        <a href="https://eddieliberato.github.io/blog/2018-06-26-cadquery-chess-set/" class="btn btn-outline-primary">Read</a>
-        </div>
-    </article>
-</div>
-
-          
         </div>
       </div>
       
@@ -265,12 +125,12 @@
       
       <h4 class="widget-title">About Me</h4>
       
-      <img src="https://eddieliberato.github.io/images/tram3.jpg" alt=""
+      <img src="http://localhost:1313/images/tram3.jpg" alt=""
         class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
       
       <p><p>My name is Edi Liberato</p>
 <p>I love to build stuff</p></p>
-      <a href="https://eddieliberato.github.io/about/" class="btn btn-outline-primary">Know More</a>
+      <a href="http://localhost:1313/about/" class="btn btn-outline-primary">Know More</a>
       
     </div>
     
@@ -278,13 +138,16 @@
       <h4 class="widget-title">Categories</h4>
       <ul class="list-unstyled">
         <li><a
-            href="/categories/computer-aided-design">Computer aided design</a>
-        </li>
-        <li><a
-            href="/categories/fea">Fea</a>
+            href="/categories/engineering">Engineering</a>
         </li>
         <li><a
             href="/categories/non-technical">Non technical</a>
+        </li>
+        <li><a
+            href="/categories/programming">Programming</a>
+        </li>
+        <li><a
+            href="/categories/programmming">Programmming</a>
         </li>
       </ul>
     </div>
@@ -327,7 +190,7 @@
     </div>
     
     <div class="widget">
-      <img src="https://eddieliberato.github.io/images/promotion.png" alt="" class="img-fluid">
+      <img src="http://localhost:1313/images/promotion.png" alt="" class="img-fluid">
     </div>
   </div>
 </div>
@@ -397,13 +260,16 @@
         <h6 class="mb-4">Categories</h6>
         <ul class="list-unstyled">
           <li class="mb-3"><a class="text-dark"
-              href="/categories/computer-aided-design">Computer aided design</a>
-          </li>
-          <li class="mb-3"><a class="text-dark"
-              href="/categories/fea">Fea</a>
+              href="/categories/engineering">Engineering</a>
           </li>
           <li class="mb-3"><a class="text-dark"
               href="/categories/non-technical">Non technical</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/programming">Programming</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/programmming">Programmming</a>
           </li>
         </ul>
       </div>
@@ -412,7 +278,7 @@
         <h6 class="mb-4">Quick Links</h6>
         <ul class="list-unstyled">
           
-          <li class="mb-3"><a class="text-dark" href="https://eddieliberato.github.io/about">About</a></li>
+          <li class="mb-3"><a class="text-dark" href="http://localhost:1313/about">About</a></li>
           
         </ul>
       </div>
@@ -422,25 +288,25 @@
 </footer>
 
 <script>
-  var indexURL = "https://eddieliberato.github.io/index.json"
+  var indexURL = "http://localhost:1313/index.json"
 </script>
 
 <!-- JS Plugins -->
 
-<script src="https://eddieliberato.github.io/plugins/jQuery/jquery.min.js"></script>
+<script src="http://localhost:1313/plugins/jQuery/jquery.min.js"></script>
 
-<script src="https://eddieliberato.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="http://localhost:1313/plugins/bootstrap/bootstrap.min.js"></script>
 
-<script src="https://eddieliberato.github.io/plugins/search/fuse.min.js"></script>
+<script src="http://localhost:1313/plugins/search/fuse.min.js"></script>
 
-<script src="https://eddieliberato.github.io/plugins/search/mark.js"></script>
+<script src="http://localhost:1313/plugins/search/mark.js"></script>
 
-<script src="https://eddieliberato.github.io/plugins/search/search.js"></script>
+<script src="http://localhost:1313/plugins/search/search.js"></script>
 
 
 <!-- Main Script -->
 
-<script src="https://eddieliberato.github.io/js/script.min.js"></script>
+<script src="http://localhost:1313/js/script.min.js"></script>
 
 
 

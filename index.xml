@@ -6,8 +6,22 @@
     <description>Recent content on Edi Liberato blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://eddieliberato.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Monitor Stand</title>
+      <link>https://eddieliberato.github.io/blog/2026-02-08-monitor-stand/</link>
+      <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://eddieliberato.github.io/blog/2026-02-08-monitor-stand/</guid>
+      <description>&lt;p&gt;Even if you like your desk, more space when keyboard isn&amp;rsquo;t in use feels nice.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Plywood Connectors Revisited</title>
+      <link>https://eddieliberato.github.io/blog/2026-02-01-plywood-bracket-revisited/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://eddieliberato.github.io/blog/2026-02-01-plywood-bracket-revisited/</guid>
+      <description>&lt;p&gt;So much has changed in cadquery since I last used it in around 2022. Now We have the sketch API and assembly support.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Some Cool Songs 🔊</title>
       <link>https://eddieliberato.github.io/blog/2026-01-01-some-cool-songs/</link>

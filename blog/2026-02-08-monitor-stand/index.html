@@ -128,13 +128,13 @@
         
         <div class ="tags-border">
           <div class="content mb-5">
-            <p>Even if you like your desk, more space when keyboard isn&rsquo;t in use feels nice.</p>
+            <p>More space when keyboard is not being used just feels nice.</p>
 <p>That’s my takeaway after finding a $2 leftover plywood plank at my local hardware store and adding a pair of 3D-printed side supports.</p>
 <p>These side supports were created using in cadquery. Simple and easy.</p>
 <p>Because the design is fully parametric, getting a snug fit for the plank is effortless, and no hardware is needed. 😎</p>
 
 
-<div id="threejs-1770544352158131206"
+<div id="threejs-1770570156579751417"
      class="threejs-viewer"
      style="width: 100%;
             height: 400px;"
@@ -150,7 +150,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
-const container = document.getElementById('threejs-1770544352158131206');
+const container = document.getElementById('threejs-1770570156579751417');
 
 requestAnimationFrame(() => {
   const width = container.offsetWidth || 600;
@@ -278,11 +278,11 @@ requestAnimationFrame(() => {
 </span></span><span class="line"><span class="cl"><span class="c1">## 3d printed side support parameters</span>
 </span></span><span class="line"><span class="cl"><span class="n">base_length</span> <span class="o">=</span> <span class="mf">250.0</span>        <span class="c1"># mm</span>
 </span></span><span class="line"><span class="cl"><span class="n">support_height</span> <span class="o">=</span> <span class="mf">120.0</span>     <span class="c1"># mm</span>
-</span></span><span class="line"><span class="cl"><span class="n">support_thick</span> <span class="o">=</span> <span class="mf">15.0</span>       <span class="c1"># mm</span>
+</span></span><span class="line"><span class="cl"><span class="n">support_thick</span> <span class="o">=</span> <span class="mf">10.0</span>       <span class="c1"># mm</span>
 </span></span><span class="line"><span class="cl"><span class="n">taper_angle</span> <span class="o">=</span> <span class="mf">5.0</span>          <span class="c1"># degress, the slope on each side of the trapezoid</span>
 </span></span><span class="line"><span class="cl"><span class="n">round_edges</span> <span class="o">=</span> <span class="mf">10.0</span>         <span class="c1"># mm, fillet of the outer contour edges </span>
 </span></span><span class="line"><span class="cl"><span class="n">contour_thick</span> <span class="o">=</span> <span class="mf">4.0</span>        <span class="c1"># mm, thickness of the solid outer contour</span>
-</span></span><span class="line"><span class="cl"><span class="n">slot_height</span> <span class="o">=</span> <span class="mf">48.0</span>         <span class="c1"># mm, distance from center of the plank slot</span>
+</span></span><span class="line"><span class="cl"><span class="n">slot_height</span> <span class="o">=</span> <span class="mf">36.0</span>         <span class="c1"># mm, distance of plank slot to the origin</span>
 </span></span><span class="line"><span class="cl"><span class="n">relief_holes</span> <span class="o">=</span> <span class="mf">2.0</span>         <span class="c1"># mm, diameter of the holes to relief plank slot vertices </span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">## mesh pattern parameters</span>
@@ -309,13 +309,13 @@ requestAnimationFrame(() => {
 </span></span><span class="line"><span class="cl"><span class="n">Aplate</span> <span class="o">=</span> <span class="p">(</span><span class="n">blank</span> <span class="o">-</span> <span class="n">feet_cutout</span><span class="p">)</span><span class="o">.</span><span class="n">vertices</span><span class="p">()</span><span class="o">.</span><span class="n">chamfer</span><span class="p">(</span><span class="n">round_edges</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">Aplate_offset</span> <span class="o">=</span> <span class="n">Aplate</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span><span class="o">.</span><span class="n">wires</span><span class="p">()</span><span class="o">.</span><span class="n">offset</span><span class="p">(</span><span class="o">-</span><span class="n">contour_thick</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">## Now a solid contour around the borders, making the inside of the blank hollow</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## Solid contour around the borders, making the inside of the blank hollow</span>
 </span></span><span class="line"><span class="cl"><span class="n">Ap_extr</span> <span class="o">=</span> <span class="n">cq</span><span class="o">.</span><span class="n">Workplane</span><span class="p">(</span><span class="s2">&#34;front&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">placeSketch</span><span class="p">(</span><span class="n">Aplate</span><span class="p">)</span><span class="o">.</span><span class="n">extrude</span><span class="p">(</span><span class="n">support_thick</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">Ap_offset_extr</span> <span class="o">=</span> <span class="n">cq</span><span class="o">.</span><span class="n">Workplane</span><span class="p">(</span><span class="s2">&#34;front&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">placeSketch</span><span class="p">(</span><span class="n">Aplate_offset</span><span class="p">)</span><span class="o">.</span><span class="n">extrude</span><span class="p">(</span><span class="n">support_thick</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">borders</span> <span class="o">=</span> <span class="n">Ap_extr</span> <span class="o">-</span> <span class="n">Ap_offset_extr</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">## Shape subtraction from an offset of the blank to create a perforated area</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## Pattern subtraction from an offset of the blank to create a perforated area</span>
 </span></span><span class="line"><span class="cl"><span class="c1">## Values here were choosen by trial and error</span>
 </span></span><span class="line"><span class="cl"><span class="n">pattern</span> <span class="o">=</span> <span class="p">(</span><span class="n">cq</span><span class="o">.</span><span class="n">Sketch</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">           <span class="o">.</span><span class="n">rarray</span><span class="p">(</span><span class="n">spacing</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">spacing</span><span class="p">,</span> <span class="n">x_n</span><span class="p">,</span> <span class="n">y_n</span><span class="p">)</span>
@@ -326,39 +326,57 @@ requestAnimationFrame(() => {
 </span></span><span class="line"><span class="cl">           <span class="o">.</span><span class="n">regularPolygon</span><span class="p">(</span><span class="n">poly_radius</span><span class="p">,</span> <span class="n">poly_n</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">           <span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">punch</span> <span class="o">=</span> <span class="n">cq</span><span class="o">.</span><span class="n">Workplane</span><span class="p">(</span><span class="s2">&#34;front&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">placeSketch</span><span class="p">(</span><span class="n">pattern</span><span class="p">)</span><span class="o">.</span><span class="n">extrude</span><span class="p">(</span><span class="n">support_thick</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">mesh</span> <span class="o">=</span> <span class="n">Ap_offset_extr</span> <span class="o">-</span> <span class="n">punch</span>
+</span></span><span class="line"><span class="cl"><span class="n">mesh</span> <span class="o">=</span> <span class="n">Aplate_offset</span><span class="o">.</span><span class="n">face</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">## Subtracting a slot for the wooden plank</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## Creating a slot on the mesh for the wooden plank</span>
 </span></span><span class="line"><span class="cl"><span class="n">plank_slot_sketch</span>  <span class="o">=</span> <span class="n">cq</span><span class="o">.</span><span class="n">Sketch</span><span class="p">()</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">plank_width</span><span class="p">,</span> <span class="n">plank_thick</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">pslot_offset</span> <span class="o">=</span> <span class="n">plank_slot_sketch</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span><span class="o">.</span><span class="n">wires</span><span class="p">()</span><span class="o">.</span><span class="n">offset</span><span class="p">(</span><span class="n">contour_thick</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">pslot_offset</span> <span class="o">=</span> <span class="n">plank_slot_sketch</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span><span class="o">.</span><span class="n">wires</span><span class="p">()</span><span class="o">.</span><span class="n">offset</span><span class="p">(</span><span class="n">contour_thick</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">plank_contour</span> <span class="o">=</span> <span class="p">(</span><span class="n">cq</span><span class="o">.</span><span class="n">Workplane</span><span class="p">(</span><span class="s2">&#34;front&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                 <span class="o">.</span><span class="n">placeSketch</span><span class="p">(</span><span class="n">pslot_offset</span><span class="o">.</span><span class="n">moved</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">slot_height</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">                 <span class="o">.</span><span class="n">extrude</span><span class="p">(</span><span class="n">support_thick</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                 <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">mesh_w_slot</span> <span class="o">=</span> <span class="n">mesh</span><span class="o">.</span><span class="n">face</span><span class="p">(</span><span class="n">pslot_offset</span><span class="o">.</span><span class="n">moved</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">slot_height</span><span class="p">),</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">mesh_slot</span> <span class="o">=</span> <span class="n">mesh</span> <span class="o">-</span> <span class="n">plank_contour</span>
+</span></span><span class="line"><span class="cl"><span class="n">reliefs</span> <span class="o">=</span> <span class="p">(</span><span class="n">cq</span><span class="o">.</span><span class="n">Sketch</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">           <span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">plank_width</span><span class="p">,</span> <span class="n">plank_thick</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&#34;c&#34;</span><span class="p">,</span> <span class="n">tag</span><span class="o">=</span><span class="s2">&#34;reliefs&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">           <span class="o">.</span><span class="n">vertices</span><span class="p">(</span><span class="n">tag</span><span class="o">=</span><span class="s2">&#34;reliefs&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">           <span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">relief_holes</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">           <span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">plank_slot</span> <span class="o">=</span> <span class="p">(</span><span class="n">cq</span><span class="o">.</span><span class="n">Workplane</span><span class="p">(</span><span class="s2">&#34;front&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                 <span class="o">.</span><span class="n">placeSketch</span><span class="p">(</span><span class="n">plank_slot_sketch</span><span class="o">.</span><span class="n">moved</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">slot_height</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">                 <span class="o">.</span><span class="n">extrude</span><span class="p">(</span><span class="n">support_thick</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">                 <span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">pslot_contour</span> <span class="o">=</span> <span class="n">plank_contour</span> <span class="o">-</span> <span class="n">plank_slot</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># remainder: the order of operations is important here, slot_contour has to be after mesh_w_slot</span>
+</span></span><span class="line"><span class="cl"><span class="n">slot_contour</span> <span class="o">=</span> <span class="n">pslot_offset</span><span class="o">.</span><span class="n">face</span><span class="p">(</span><span class="n">plank_slot_sketch</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">face</span><span class="p">(</span><span class="n">reliefs</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">stand</span> <span class="o">=</span> <span class="n">borders</span> <span class="o">+</span> <span class="n">mesh_slot</span> <span class="o">+</span> <span class="n">pslot_contour</span>
+</span></span><span class="line"><span class="cl"><span class="n">final_mesh</span> <span class="o">=</span> <span class="n">mesh_w_slot</span><span class="o">.</span><span class="n">face</span><span class="p">(</span><span class="n">slot_contour</span><span class="o">.</span><span class="n">moved</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">slot_height</span><span class="p">),</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">## Some holes around the plank corners to prevent stress raisers</span>
-</span></span><span class="line"><span class="cl"><span class="n">stand</span> <span class="o">=</span> <span class="p">(</span><span class="n">stand</span><span class="o">.</span><span class="n">faces</span><span class="p">(</span><span class="s2">&#34;&gt;Z&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">         <span class="o">.</span><span class="n">workplane</span><span class="p">(</span><span class="n">centerOption</span><span class="o">=</span><span class="s2">&#34;CenterOfBoundBox&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">         <span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">slot_height</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">         <span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">plank_width</span><span class="p">,</span> <span class="n">plank_thick</span><span class="p">,</span> <span class="n">forConstruction</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">         <span class="o">.</span><span class="n">vertices</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">         <span class="o">.</span><span class="n">hole</span><span class="p">(</span><span class="n">relief_holes</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">         <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">mesh_extrusion</span> <span class="o">=</span> <span class="p">(</span><span class="n">cq</span><span class="o">.</span><span class="n">Workplane</span><span class="p">(</span><span class="s2">&#34;front&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                  <span class="o">.</span><span class="n">placeSketch</span><span class="p">(</span><span class="n">final_mesh</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                  <span class="o">.</span><span class="n">extrude</span><span class="p">(</span><span class="n">support_thick</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                  <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">stand</span> <span class="o">=</span> <span class="n">borders</span> <span class="o">+</span> <span class="n">mesh_extrusion</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">show</span><span class="p">(</span><span class="n">stand</span><span class="p">)</span>
-</span></span></code></pre></div><p>
+</span></span></code></pre></div><p>Most of the code is easy to follow, not many obscure lines on this one. Notable techniques are:</p>
+<ul>
+<li>Using the technique I once proposed on the oficial cadquery documentation to create offsets, using .copy() to prevent mutation of the object</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">Aplate</span> <span class="o">=</span> <span class="p">(</span><span class="n">blank</span> <span class="o">-</span> <span class="n">feet_cutout</span><span class="p">)</span><span class="o">.</span><span class="n">vertices</span><span class="p">()</span><span class="o">.</span><span class="n">chamfer</span><span class="p">(</span><span class="n">round_edges</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">Aplate_offset</span> <span class="o">=</span> <span class="n">Aplate</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span><span class="o">.</span><span class="n">wires</span><span class="p">()</span><span class="o">.</span><span class="n">offset</span><span class="p">(</span><span class="o">-</span><span class="n">contour_thick</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><ul>
+<li>Just like on the  <a href="https://eddieliberato.github.io/blog/2026-02-01-plywood-bracket-revisited/">plywood brackets</a>, using .face() to add and subtract sketches</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">mesh</span> <span class="o">=</span> <span class="n">Aplate_offset</span><span class="o">.</span><span class="n">face</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><ul>
+<li>It may be convinient to use the .moved(x,y) method to place the sketch where you need it, just like:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">final_mesh</span> <span class="o">=</span> <span class="n">mesh_w_slot</span><span class="o">.</span><span class="n">face</span><span class="p">(</span><span class="n">slot_contour</span><span class="o">.</span><span class="n">moved</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">slot_height</span><span class="p">),</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><ul>
+<li>Also important to remember, that on the sketch API, a tag is needed to use the vertices() method to distribute a shape</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">reliefs</span> <span class="o">=</span> <span class="p">(</span><span class="n">cq</span><span class="o">.</span><span class="n">Sketch</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">           <span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">plank_width</span><span class="p">,</span> <span class="n">plank_thick</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&#34;c&#34;</span><span class="p">,</span> <span class="n">tag</span><span class="o">=</span><span class="s2">&#34;reliefs&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">           <span class="o">.</span><span class="n">vertices</span><span class="p">(</span><span class="n">tag</span><span class="o">=</span><span class="s2">&#34;reliefs&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">           <span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">relief_holes</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">           <span class="p">)</span>
+</span></span></code></pre></div><p>That&rsquo;s it. Not very complicated. The real trick seems to be knowing when to use boolean operation on the sketch method and when to extrude the shapes and go on from there.</p>
+<p>
 
 
 

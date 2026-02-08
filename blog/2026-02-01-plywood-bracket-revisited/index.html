@@ -115,7 +115,7 @@
         <a href="/categories/programming"
           class="text-primary">Programming</a>
         
-        <h2>Plywood Connectors Revisited</h2>
+        <h2>Plywood Brackets Revisited</h2>
         <div class="mb-3 post-meta">
           <span>By Edi Liberato</span>
           
@@ -124,7 +124,7 @@
           
         </div>
         
-        <img src="https://eddieliberato.github.io/images/post/2026-02-plywood-bracket/plywood-connectors.svg" class="img mb-4" alt="Plywood Connectors Revisited">
+        <img src="https://eddieliberato.github.io/images/post/2026-02-plywood-bracket/plywood-connectors.svg" class="img mb-4" alt="Plywood Brackets Revisited">
         
         <div class ="tags-border">
           <div class="content mb-5">
@@ -135,7 +135,7 @@
 <p>While everything could arguably be implemented using the Fluent API, these stress-relief notches were much easier to create using the sketch tools.</p>
 
 
-<div id="threejs-1770544352162281803"
+<div id="threejs-1770570156582953138"
      class="threejs-viewer"
      style="width: 100%;
             height: 400px;"
@@ -151,7 +151,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
-const container = document.getElementById('threejs-1770544352162281803');
+const container = document.getElementById('threejs-1770570156582953138');
 
 requestAnimationFrame(() => {
   const width = container.offsetWidth || 600;
@@ -355,8 +355,14 @@ requestAnimationFrame(() => {
 </span></span><span class="line"><span class="cl"><span class="n">assy</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">jaw</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">cq</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="mi">150</span><span class="o">/</span><span class="mf">255.0</span><span class="p">,</span> <span class="mi">255</span><span class="o">/</span><span class="mf">255.0</span><span class="p">,</span> <span class="mi">41</span><span class="o">/</span><span class="mf">255.0</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s2">&#34;jaw&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">show</span><span class="p">(</span><span class="n">assy</span><span class="p">)</span>
-</span></span></code></pre></div><p>The cool line to pay attention here is the following one, where one sketch is subtracted from the other</p>
+</span></span></code></pre></div><ul>
+<li>The cool line to pay attention here is the following one, where one sketch is subtracted from the other</li>
+</ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">final_sketch</span> <span class="o">=</span> <span class="n">tabs</span><span class="o">.</span><span class="n">face</span><span class="p">(</span><span class="n">ply_bearing</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;a&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">face</span><span class="p">(</span><span class="n">relief</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><ul>
+<li>Also usefull to know that you can use vector directions to select a face, This was used many times on the script as some important faces are oriented at 45 degrees. For example in:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">.</span><span class="n">faces</span><span class="p">(</span><span class="s2">&#34;&lt;(1, 1, 0)&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">workplane</span><span class="p">(</span><span class="n">centerOption</span><span class="o">=</span><span class="s2">&#34;CenterOfMass&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">hole</span><span class="p">(</span><span class="n">screw_clearance</span><span class="p">)</span>
 </span></span></code></pre></div><p>The assembly (assy) part was not necessary for such a simple model, but I included here as simple example of how to call it.</p>
 <p>
 
@@ -385,7 +391,7 @@ requestAnimationFrame(() => {
      style="max-width:100%; height:auto;"
      loading="lazy">
 </p>
-<p>I used 12 mm plywood and 6 mm hardware. Considering it has no bracing, it’s reasonably strong and stable. Overall, I’m very happy with it — my turntable, along with books and various random items, regularly sit on top without any issues.</p>
+<p>I used 12 mm plywood and 6 mm hardware. Considering it has no bracing, it’s reasonably strong and stable. Overall, I’m very happy with it — my turntable, along with books and loads of random stuff, regularly sit on top of it without any issues.</p>
 <p>📎 <strong>Download:</strong>
 <a href="3d-print-plywood-bracket.zip">Plywood Bracket - M6 step file</a></p>
 

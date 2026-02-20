@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Cadquery parametric monitor stand">
   <meta name="author" content="Edi Liberato">
-  <meta name="generator" content="Hugo 0.155.2">
+  <meta name="generator" content="Hugo 0.155.3">
 
   <!-- plugins -->
   
@@ -130,11 +130,11 @@
           <div class="content mb-5">
             <p>More space when keyboard is not being used just feels nice.</p>
 <p>That’s my takeaway after finding a $2 leftover plywood plank at my local hardware store and adding a pair of 3D-printed side supports.</p>
-<p>These side supports were created using in cadquery. Simple and easy.</p>
+<p>These side supports were created using in cadquery. Nice and simple.</p>
 <p>Because the design is fully parametric, getting a snug fit for the plank is effortless, and no hardware is needed. 😎</p>
 
 
-<div id="threejs-1770570156579751417"
+<div id="threejs-1771582645121196239"
      class="threejs-viewer"
      style="width: 100%;
             height: 400px;"
@@ -150,7 +150,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
-const container = document.getElementById('threejs-1770570156579751417');
+const container = document.getElementById('threejs-1771582645121196239');
 
 requestAnimationFrame(() => {
   const width = container.offsetWidth || 600;
@@ -375,7 +375,7 @@ requestAnimationFrame(() => {
 </span></span><span class="line"><span class="cl">           <span class="o">.</span><span class="n">vertices</span><span class="p">(</span><span class="n">tag</span><span class="o">=</span><span class="s2">&#34;reliefs&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">           <span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">relief_holes</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">           <span class="p">)</span>
-</span></span></code></pre></div><p>That&rsquo;s it. Not very complicated. The real trick seems to be knowing when to use boolean operation on the sketch method and when to extrude the shapes and go on from there.</p>
+</span></span></code></pre></div><p>That&rsquo;s it. Not very complicated but not trivial either. The real trick seems to be knowing when to use boolean operations on the sketch method and when to extrude the shapes and go on from there using the fluent API.</p>
 <p>
 
 

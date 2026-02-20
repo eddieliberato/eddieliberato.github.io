@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="3d printed connectors to make plywood structures">
   <meta name="author" content="Edi Liberato">
-  <meta name="generator" content="Hugo 0.155.2">
+  <meta name="generator" content="Hugo 0.155.3">
 
   <!-- plugins -->
   
@@ -130,12 +130,12 @@
           <div class="content mb-5">
             <p>So much has changed in cadquery since I last used it in around 2022. Now We have the sketch API and assembly support.</p>
 <p>Since I wasn’t completely happy with my original <a href="https://eddieliberato.github.io/blog/2022-06-26-cadquery-models-collection/#plywood-connectors-13052020">plywood brackets</a>, I revised the model, this time taking advantage of the Sketch API.</p>
-<p>The changes I wanted to implement were increased bearing area for the plywood board and small notches where the board corners rest, since those locations act as stress concentrators. That’s where this structure tends to fail, so relieving stress there is important.</p>
+<p>The changes I wanted to implement were increased bearing area for the plywood board and small notches where the board corners rest. Since those locations act as stress concentrators, that’s where this structure tends to fail and relieving stress there is important.</p>
 <p>This new version also makes better use of parametric features to simplify tailoring the bracket so it clamps the plywood board while leaving only a minimal gap between the 3d printed bracket and jaw after the screw is tightened. In the script, I called the parameter that controls this gap magic_margin.</p>
 <p>While everything could arguably be implemented using the Fluent API, these stress-relief notches were much easier to create using the sketch tools.</p>
 
 
-<div id="threejs-1770570156582953138"
+<div id="threejs-1771582645122987905"
      class="threejs-viewer"
      style="width: 100%;
             height: 400px;"
@@ -151,7 +151,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
-const container = document.getElementById('threejs-1770570156582953138');
+const container = document.getElementById('threejs-1771582645122987905');
 
 requestAnimationFrame(() => {
   const width = container.offsetWidth || 600;
@@ -356,7 +356,7 @@ requestAnimationFrame(() => {
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">show</span><span class="p">(</span><span class="n">assy</span><span class="p">)</span>
 </span></span></code></pre></div><ul>
-<li>The cool line to pay attention here is the following one, where one sketch is subtracted from the other</li>
+<li>The cool line to pay attention here is the following one, where sketches are added and subtracted from the other.</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">final_sketch</span> <span class="o">=</span> <span class="n">tabs</span><span class="o">.</span><span class="n">face</span><span class="p">(</span><span class="n">ply_bearing</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;a&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">face</span><span class="p">(</span><span class="n">relief</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">)</span>
 </span></span></code></pre></div><ul>
@@ -391,7 +391,7 @@ requestAnimationFrame(() => {
      style="max-width:100%; height:auto;"
      loading="lazy">
 </p>
-<p>I used 12 mm plywood and 6 mm hardware. Considering it has no bracing, it’s reasonably strong and stable. Overall, I’m very happy with it — my turntable, along with books and loads of random stuff, regularly sit on top of it without any issues.</p>
+<p>I used 12 mm plywood, 6 mm hardware and a special high toughness PLA. Considering it has no bracing, it’s reasonably strong and stable. Overall, I’m very happy with it — my turntable, along with books and loads of random stuff, regularly sit on top of it without any issues.</p>
 <p>📎 <strong>Download:</strong>
 <a href="3d-print-plywood-bracket.zip">Plywood Bracket - M6 step file</a></p>
 

@@ -162,8 +162,8 @@
 <h4 id="installing-qemu">Installing QEMU</h4>
 <p>In a modern Arch Linux workflow, when you need to deal with proprietary Windows or macOS nonsense, you’d typically use Quickemu and move on with your life. Unfortunately, Quickemu doesn’t support legacy operating systems like Windows XP.</p>
 <p>The solution is to go one step lower on the abstraction ladder and use QEMU directly. If you don’t already have it installed, run:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo pacman -S qemu-desktop
-</span></span></code></pre></div><h4 id="finding-a-windows-xp-image">Finding a Windows XP Image</h4>
+<pre tabindex="0"><code>sudo pacman -S qemu-desktop
+</code></pre><h4 id="finding-a-windows-xp-image">Finding a Windows XP Image</h4>
 <p>Next, we need a Windows XP image. Fortunately, the Internet Archive has us covered. You can download an ISO from:</p>
 <p><a href="https://archive.org/details/WinXPProSP3x86">https://archive.org/details/WinXPProSP3x86</a>.</p>
 <p>The serial listed in the description worked for me:</p>
@@ -172,40 +172,40 @@
 <ul>
 <li>Create a working directory:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mkdir winxp-vm
-</span></span><span class="line"><span class="cl"><span class="nb">cd</span> winxp-vm/
-</span></span></code></pre></div><ul>
+<pre tabindex="0"><code>mkdir winxp-vm
+cd winxp-vm/
+</code></pre><ul>
 <li>Create a virtual disk</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">qemu-img create -f qcow2 winxp.img 5G
-</span></span></code></pre></div><ul>
+<pre tabindex="0"><code>qemu-img create -f qcow2 winxp.img 5G
+</code></pre><ul>
 <li>Run the VM and install windows, jusk like doing it on real hardware</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">qemu-system-x86_64 <span class="se">\
-</span></span></span><span class="line"><span class="cl">    -hda winxp.img <span class="se">\
-</span></span></span><span class="line"><span class="cl">    -boot d  <span class="se">\
-</span></span></span><span class="line"><span class="cl">    -cpu qemu32 <span class="se">\
-</span></span></span><span class="line"><span class="cl">    -enable-kvm <span class="se">\
-</span></span></span><span class="line"><span class="cl">    -cpu host <span class="se">\
-</span></span></span><span class="line"><span class="cl">    -m <span class="m">2048</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl">    -vga cirrus <span class="se">\
-</span></span></span><span class="line"><span class="cl">    -net none <span class="se">\
-</span></span></span><span class="line"><span class="cl">    -device usb-tablet <span class="se">\
-</span></span></span><span class="line"><span class="cl">    -cdrom en_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73974.iso
-</span></span></code></pre></div><p>The important flag here is &lt;-boot d&gt;, which tells the VM to boot from the CD-ROM—just like booting from an installation disc on a physical machine.</p>
+<pre tabindex="0"><code>qemu-system-x86_64 \
+    -hda winxp.img \
+    -boot d  \
+    -cpu qemu32 \
+    -enable-kvm \
+    -cpu host \
+    -m 2048 \
+    -vga cirrus \
+    -net none \
+    -device usb-tablet \
+    -cdrom en_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73974.iso
+</code></pre><p>The important flag here is &lt;-boot d&gt;, which tells the VM to boot from the CD-ROM—just like booting from an installation disc on a physical machine.</p>
 <p>Also, using &lt;-cpu qemu32&gt; is convenient because it makes the VM image more portable. You can back it up and run it on other machines without needing to reconfigure everything.</p>
 <h4 id="gathering-the-required-applications">Gathering the Required Applications</h4>
 <p>Once Windows is installed, we need to bring the required software into the VM. The easiest way to do this is by creating an ISO image and mounting it as a virtual CD-ROM.</p>
 <p>In general you&rsquo;ll need Windas to talk to the monitor and HCFR to receive color information from probes. Specific to my setup, I needed also drivers for my spectometer (colormunki photo) and for the USB-to-TTL adapter. For the latter I used a cheap FTDI clone from Aliexpress. If you have an arduino, it is possible to use the USB to UART chip on the board for this, you just need to short the reset pin to ground.</p>
 <p>Create a folder called crtfix and place all required files inside it. Then generate an ISO using:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mkisofs -o crtfixapps.iso crtfix/
-</span></span></code></pre></div><p>In my case, the crtfix folder looked like this:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">├── crtfix
-</span></span><span class="line"><span class="cl">    ├── CDM20824_Setup.exe
-</span></span><span class="line"><span class="cl">    ├── DASX.zip
-</span></span><span class="line"><span class="cl">    ├── HCFRSetup.exe
-</span></span><span class="line"><span class="cl">    └── zadig_xp-2.2.exe
-</span></span></code></pre></div><p>You might see on internet forums people recommending early versions of HCFR. Don&rsquo;t listen, the last released version is what you want.</p>
+<pre tabindex="0"><code>mkisofs -o crtfixapps.iso crtfix/
+</code></pre><p>In my case, the crtfix folder looked like this:</p>
+<pre tabindex="0"><code>├── crtfix
+    ├── CDM20824_Setup.exe
+    ├── DASX.zip
+    ├── HCFRSetup.exe
+    └── zadig_xp-2.2.exe
+</code></pre><p>You might see on internet forums people recommending early versions of HCFR. Don&rsquo;t listen, the last released version is what you want.</p>
 
 
 
@@ -229,25 +229,25 @@
 <h4 id="run-the-vm">Run the VM</h4>
 <p>Before start the VM, we need to forward the USB devices to the VM so it can see the physical devices connected to the USB port on the physical computer.</p>
 <p>First, connect your USB devices and list them:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">lsusb
-</span></span></code></pre></div><p>This will show the connected devices along with their vendor and product IDs. For me the important lines were:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Bus <span class="m">001</span> Device 008: ID 0403:6001 Future Technology Devices International, Ltd FT232 Serial <span class="o">(</span>UART<span class="o">)</span> IC
-</span></span><span class="line"><span class="cl">Bus <span class="m">001</span> Device 009: ID 0971:2007 Gretag-Macbeth AG ColorMunki Photo
-</span></span></code></pre></div><p>Now with this info we can finally start the virtual machine and get the job done</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo qemu-system-x86_64 <span class="se">\
-</span></span></span><span class="line"><span class="cl">        -hda winxp.img <span class="se">\
-</span></span></span><span class="line"><span class="cl">        -boot c  <span class="se">\
-</span></span></span><span class="line"><span class="cl">        -cpu qemu32 <span class="se">\
-</span></span></span><span class="line"><span class="cl">        -enable-kvm <span class="se">\
-</span></span></span><span class="line"><span class="cl">        -cpu host <span class="se">\
-</span></span></span><span class="line"><span class="cl">        -m <span class="m">2048</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl">        -vga cirrus <span class="se">\
-</span></span></span><span class="line"><span class="cl">        -net none <span class="se">\
-</span></span></span><span class="line"><span class="cl">        -device usb-tablet <span class="se">\
-</span></span></span><span class="line"><span class="cl">        -usb -device usb-host,vendorid<span class="o">=</span>0x0403,productid<span class="o">=</span>0x6001 <span class="se">\
-</span></span></span><span class="line"><span class="cl">        -usb -device usb-host,vendorid<span class="o">=</span>0x0971,productid<span class="o">=</span>0x2007 <span class="se">\
-</span></span></span><span class="line"><span class="cl">        -cdrom crtfixapps.iso
-</span></span></code></pre></div><h3 id="some-final-notes">Some Final Notes</h3>
+<pre tabindex="0"><code>lsusb
+</code></pre><p>This will show the connected devices along with their vendor and product IDs. For me the important lines were:</p>
+<pre tabindex="0"><code>Bus 001 Device 008: ID 0403:6001 Future Technology Devices International, Ltd FT232 Serial (UART) IC
+Bus 001 Device 009: ID 0971:2007 Gretag-Macbeth AG ColorMunki Photo
+</code></pre><p>Now with this info we can finally start the virtual machine and get the job done</p>
+<pre tabindex="0"><code>sudo qemu-system-x86_64 \
+        -hda winxp.img \
+        -boot c  \
+        -cpu qemu32 \
+        -enable-kvm \
+        -cpu host \
+        -m 2048 \
+        -vga cirrus \
+        -net none \
+        -device usb-tablet \
+        -usb -device usb-host,vendorid=0x0403,productid=0x6001 \
+        -usb -device usb-host,vendorid=0x0971,productid=0x2007 \
+        -cdrom crtfixapps.iso
+</code></pre><h3 id="some-final-notes">Some Final Notes</h3>
 
 
 

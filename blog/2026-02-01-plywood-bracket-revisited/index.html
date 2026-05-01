@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="3d printed connectors to make plywood structures">
   <meta name="author" content="Edi Liberato">
-  <meta name="generator" content="Hugo 0.159.1">
+  <meta name="generator" content="Hugo 0.161.0">
 
   <!-- plugins -->
   
@@ -128,14 +128,14 @@
         
         <div class ="tags-border">
           <div class="content mb-5">
-            <p>So much has changed in cadquery since I last used it in around 2022. Now We have the sketch API and assembly support.</p>
+            <p>So much has changed in cadquery since I last used it in around 2022. Now we have the sketch API and assembly support</p>
 <p>Since I wasn’t completely happy with my original <a href="https://eddieliberato.github.io/blog/2022-06-26-cadquery-models-collection/#plywood-connectors-13052020">plywood brackets</a>, I revised the model, this time taking advantage of the Sketch API.</p>
-<p>The changes I wanted to implement were increased bearing area for the plywood board and small notches where the board corners rest. Since those locations act as stress concentrators, that’s where this structure tends to fail and relieving stress there is important.</p>
-<p>This new version also makes better use of parametric features to simplify tailoring the bracket so it clamps the plywood board while leaving only a minimal gap between the 3d printed bracket and jaw after the screw is tightened. In the script, I called the parameter that controls this gap magic_margin.</p>
-<p>While everything could arguably be implemented using the Fluent API, these stress-relief notches were much easier to create using the sketch tools.</p>
+<p>The changes I wanted to implement were increased bearing area for the plywood board and small notches where the board corners rest. Since those locations act as stress concentrators, that’s where this component tends to fail and relieving stress there is important.</p>
+<p>This new version also makes better use of parametric features to simplify tailoring the bracket so it clamps the plywood board while leaving only a minimal gap between the 3d printed bracket and jaw after the screw is tightened. In the script, I called the parameter that controls this gap &ldquo;magic_margin&rdquo;.</p>
+<p>While everything could arguably be implemented using only boolean operations on 3D features, these stress-relief notches were easier to create using the sketch tools.</p>
 
 
-<div id="threejs-1775026116915823863"
+<div id="threejs-1777631926366836642"
      class="threejs-viewer"
      style="width: 100%;
             height: 400px;"
@@ -151,7 +151,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
-const container = document.getElementById('threejs-1775026116915823863');
+const container = document.getElementById('threejs-1777631926366836642');
 
 requestAnimationFrame(() => {
   const width = container.offsetWidth || 600;

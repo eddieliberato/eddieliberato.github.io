@@ -13,21 +13,21 @@
       <link>https://eddieliberato.github.io/blog/2026-02-08-monitor-stand/</link>
       <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://eddieliberato.github.io/blog/2026-02-08-monitor-stand/</guid>
-      <description>&lt;p&gt;More space when keyboard is not being used just feels nice.&lt;/p&gt;</description>
+      <description>&lt;p&gt;More space when keyboard is not being used just feels nice&lt;/p&gt;</description>
     </item>
     <item>
       <title>Plywood Brackets Revisited</title>
       <link>https://eddieliberato.github.io/blog/2026-02-01-plywood-bracket-revisited/</link>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://eddieliberato.github.io/blog/2026-02-01-plywood-bracket-revisited/</guid>
-      <description>&lt;p&gt;So much has changed in cadquery since I last used it in around 2022. Now We have the sketch API and assembly support.&lt;/p&gt;</description>
+      <description>&lt;p&gt;So much has changed in cadquery since I last used it in around 2022. Now we have the sketch API and assembly support&lt;/p&gt;</description>
     </item>
     <item>
       <title>Direct Stiffness Method in Python: Trusses and Frames</title>
       <link>https://eddieliberato.github.io/blog/2022-02-28-direct-stiffness-method/</link>
       <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
       <guid>https://eddieliberato.github.io/blog/2022-02-28-direct-stiffness-method/</guid>
-      <description>&lt;p&gt;This post is about some finite element method code that I wrote back in 2014. I am sharing it here, even though I never finished the data visualization part I wanted back then.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This post is about some finite element method code that I wrote back in 2014. I am sharing it here, even though I never finished the data visualization part I wanted back then&lt;/p&gt;</description>
     </item>
     <item>
       <title>ASTM D638 Tensile Test Specimens</title>
@@ -41,7 +41,7 @@
       <link>https://eddieliberato.github.io/blog/2018-06-26-cadquery-chess-set/</link>
       <pubDate>Tue, 26 Jun 2018 00:00:00 +0000</pubDate>
       <guid>https://eddieliberato.github.io/blog/2018-06-26-cadquery-chess-set/</guid>
-      <description>&lt;p&gt;A weird project to test my new 3d printer: A chess set designed in cadquery.&lt;/p&gt;</description>
+      <description>&lt;p&gt;A weird project to test my new 3d printer: A chess set designed in cadquery&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

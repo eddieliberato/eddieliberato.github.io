@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Fixing a Sony PC CRT with messed up white balance. The repair involved getting a windows XP virtual machine to work and installing legacy software like Windas and HCFR. This post is mainly about the procedure to get an Windows XP virtual machine to work on modern Arch Linux using QEMU">
   <meta name="author" content="Edi Liberato">
-  <meta name="generator" content="Hugo 0.159.1">
+  <meta name="generator" content="Hugo 0.161.0">
 
   <!-- plugins -->
   
@@ -128,7 +128,7 @@
         
         <div class ="tags-border">
           <div class="content mb-5">
-            <p>Let&rsquo;s Fix a Sony Trinitron PC CRT with messed up white balance</p>
+            <p>Let&rsquo;s fix a Sony Trinitron PC CRT with messed up white balance</p>
 <p>I happen to have this cool Sony Trinitron that I’d like to use for playing retro games. The problem, however, is that the colors are washed out and everything looks whiter than it should. If you’re old enough to remember the cathode ray tube (CRT) era, you’ll know this is usually a white balance calibration issue.</p>
 <p>There’s some information online about performing this calibration using a piece of software called WinDAS for TTL control of the monitor, along with another tool called HCFR for color calibration. Both applications run best on Windows XP.</p>
 <p>Setting up a Windows XP virtual machine on a modern Arch Linux host is the part where I found the least amount of useful information. In this post, we’ll go through that process step by step.</p>
@@ -218,14 +218,9 @@ cd winxp-vm/
 <p>Other thing to note in this picture is where to connect the USB-to-TTL adapter on (most) Sony monitors. Once you remove the plastic back cover, it is possible to have access to a slot on the left of the monitor where the communication pins are exposed. I never bother to connect the +5V pins and everything works just fine.</p>
 <p>Also remember, in UART you connect RX-&gt;TX / TX-&gt;RX. It makes sense if you think one side sends and the other side receives.</p>
 <h5 id="sources">Sources</h5>
-<p>I got HCFR from SourceForge:</p>
-<p><a href="https://sourceforge.net/projects/hcfr/files/Windows/3.5.1.4/">https://sourceforge.net/projects/hcfr/files/Windows/3.5.1.4/</a></p>
-<p>WinDAS from:</p>
-<p><a href="https://archive.org/download/sony-das-original/DASX.zip">https://archive.org/download/sony-das-original/DASX.zip</a></p>
-<p>Zadig from:</p>
-<p><a href="https://zadig.akeo.ie/downloads/">https://zadig.akeo.ie/downloads/</a></p>
-<p>And finally, the FDTI driver from:</p>
-<p><a href="https://ftdichip.com/drivers/d2xx-drivers/">https://ftdichip.com/drivers/d2xx-drivers/</a></p>
+<p><a href="https://sourceforge.net/projects/hcfr/files/Windows/3.5.1.4/">HCFR</a> | <a href="https://archive.org/download/sony-das-original/DASX.zip">WinDAS</a> |
+<a href="https://zadig.akeo.ie/downloads/">Zadig</a> |
+<a href="https://ftdichip.com/drivers/d2xx-drivers/">FTDI driver</a></p>
 <h4 id="run-the-vm">Run the VM</h4>
 <p>Before start the VM, we need to forward the USB devices to the VM so it can see the physical devices connected to the USB port on the physical computer.</p>
 <p>First, connect your USB devices and list them:</p>

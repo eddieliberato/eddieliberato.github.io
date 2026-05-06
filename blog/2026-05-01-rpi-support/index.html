@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Edi Liberato blog">
   <meta name="author" content="Edi Liberato">
-  <meta name="generator" content="Hugo 0.161.0">
+  <meta name="generator" content="Hugo 0.161.1">
 
   <!-- plugins -->
   
@@ -139,15 +139,15 @@
 <p>Fifteen minutes of CAD, half an hour of 3D printing (for the pair), and this was the result:</p>
 
 
-<div id="threejs-1777647942144453027"
+<div id="threejs-1778068069327574105"
      class="threejs-viewer"
      style="width: 100%;
             height: 400px;"
      data-src="/blog/2026-05-01-rpi-support/rpi-breadboard-support.glb"
-     data-view="front"
-     data-camx=""
-     data-camy=""
-     data-camz="">
+     data-view=""
+     data-camx="0.8"
+     data-camy="0.4"
+     data-camz="0.8">
 </div>
 
 <script type="module">
@@ -155,7 +155,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
-const container = document.getElementById('threejs-1777647942144453027');
+const container = document.getElementById('threejs-1778068069327574105');
 
 requestAnimationFrame(() => {
   const width = container.offsetWidth || 600;
@@ -324,7 +324,7 @@ requestAnimationFrame(() => {
 </ol>
 <p>The most exotic line today, is the one that creates the spline:</p>
 <ul>
-<li>A spline is defined by a list of points, and a list of vectors that will define the tangent line from this points. For example, this design has the spline starting at the top with a tangent line pointing down given by a (0, -1) vector and arriving at the end point with a line tangent at 45 degrees, given by a (-1, -1) vector.</li>
+<li>A <strong>spline</strong> is defined by a list of points, and a list of vectors that will define the tangent line from this points. For example, this design has the spline starting at the top with a tangent line pointing down given by a (0, -1) vector and arriving at the end point with a line tangent at 45 degrees, given by a (-1, -1) vector.</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">.</span><span class="n">spline</span><span class="p">([(</span><span class="n">slot_depth</span><span class="p">,</span> <span class="n">total_height</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">bt_thick</span><span class="o">+</span><span class="n">plate_thick</span><span class="o">+</span><span class="n">ph_offset</span><span class="p">)],</span>
 </span></span><span class="line"><span class="cl">        <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)],</span> <span class="kc">False</span><span class="p">)</span>
@@ -332,8 +332,8 @@ requestAnimationFrame(() => {
 <p><img src="spline-example.svg" alt="spline example"></p>
 <p>The boolen False in the end is about the &ldquo;periodic&rdquo; argument. One uses</p>
 <ul>
-<li>False → to get open curves, as in &ldquo;draw a curve from A to B&rdquo;</li>
-<li>True → to get a closed loop, as in &ldquo;draw a loop that comes back to A smoothly&rdquo;</li>
+<li><strong>False</strong> → to get open curves, as in <strong>&ldquo;draw a curve from A to B&rdquo;</strong></li>
+<li><strong>True</strong> → to get a closed loop, as in <strong>&ldquo;draw a loop that comes back to A smoothly&rdquo;</strong></li>
 </ul>
 <p>It is mandatory to pass one of the two as it will also tell the dispacther to use the overload method that takes tangents.</p>
 <p>Also note that I, minimalistically, used only two points but it can take as many as you want.</p>
@@ -356,9 +356,14 @@ requestAnimationFrame(() => {
      style="max-width:100%; height:auto;"
      loading="lazy">
 </p>
-<p>Standoffs makes it easy to mount different add-on boards on top of the Pi. As the mount itself just fits the edge of the plate, it wastes almost no space on the breadboard and it is easy and convenient to relocate as the setup changes. 😎</p>
+<p>Standoffs makes it easy to mount different add-on boards on top of the Pi. As the mount itself just attaches to the edge of the plate, it wastes almost no space on the breadboard. Furthermore, it is easy and convenient to relocate when the setup changes as no tools are needed. 😎</p>
 <p>📎 <strong>Download:</strong>
 <a href="rpi-breadboard-support.zip">Raspberry Pi Optical Breadboard Mount</a></p>
+<h4 id="post-scriptum"><em>Post Scriptum</em></h4>
+<p>The initial quote by <a href="https://en.wikipedia.org/wiki/Terry_A._Davis">Terry A. Davis</a>, as seen on this <a href="https://www.youtube.com/watch?v=k0qmkQGqpM8">youtube cut</a>, in full:</p>
+<blockquote>
+<p>An idiot admires complexity, a genius admires simplicity, a physicist tries to make it simple. Anyway, an idiot anything the more complicated it is, the more he will admire it. If you make something so clusterfucked he can&rsquo;t understand it, he&rsquo;s gonna think you&rsquo;re a god cause you made it so complicated nobody can understand it. That&rsquo;s how they write journals in Academics, they try to make it so complicated people think you&rsquo;re a genius</p>
+</blockquote>
 
           </div>
         </div>

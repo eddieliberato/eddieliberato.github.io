@@ -139,7 +139,7 @@
 <p>Fifteen minutes of CAD, half an hour of 3D printing (for the pair), and this was the result:</p>
 
 
-<div id="threejs-1778068069327574105"
+<div id="threejs-1778089614171519247"
      class="threejs-viewer"
      style="width: 100%;
             height: 400px;"
@@ -155,7 +155,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
-const container = document.getElementById('threejs-1778068069327574105');
+const container = document.getElementById('threejs-1778089614171519247');
 
 requestAnimationFrame(() => {
   const width = container.offsetWidth || 600;
@@ -324,11 +324,11 @@ requestAnimationFrame(() => {
 </ol>
 <p>The most exotic line today, is the one that creates the spline:</p>
 <ul>
-<li>A <strong>spline</strong> is defined by a list of points, and a list of vectors that will define the tangent line from this points. For example, this design has the spline starting at the top with a tangent line pointing down given by a (0, -1) vector and arriving at the end point with a line tangent at 45 degrees, given by a (-1, -1) vector.</li>
+<li>A <strong>spline</strong> is defined by a list of points, and a list of vectors that will define the tangent line from this points. For example, this design has the spline starting at the top with a line tangent to a vector pointing down [(0, -1)], and arriving at the end point with a line tangent to a vector at 225 degrees, given by [(-1, -1)]</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">.</span><span class="n">spline</span><span class="p">([(</span><span class="n">slot_depth</span><span class="p">,</span> <span class="n">total_height</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">bt_thick</span><span class="o">+</span><span class="n">plate_thick</span><span class="o">+</span><span class="n">ph_offset</span><span class="p">)],</span>
 </span></span><span class="line"><span class="cl">        <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)],</span> <span class="kc">False</span><span class="p">)</span>
-</span></span></code></pre></div><p>This is illustrated on the figure on the left. Just as a counter example, on the right figure we see the output if the vector at the end point would point straight in a negative direction along X axis (-1, 0).</p>
+</span></span></code></pre></div><p>This is illustrated on the figure on the left. Just as an auxiliary example, on the right figure we see the output if the vector at the end point would point straight at negative direction along X axis (-1, 0).</p>
 <p><img src="spline-example.svg" alt="spline example"></p>
 <p>The boolen False in the end is about the &ldquo;periodic&rdquo; argument. One uses</p>
 <ul>
@@ -336,7 +336,7 @@ requestAnimationFrame(() => {
 <li><strong>True</strong> → to get a closed loop, as in <strong>&ldquo;draw a loop that comes back to A smoothly&rdquo;</strong></li>
 </ul>
 <p>It is mandatory to pass one of the two as it will also tell the dispacther to use the overload method that takes tangents.</p>
-<p>Also note that I, minimalistically, used only two points but it can take as many as you want.</p>
+<p>Note that I intentionally defined the spline minimalistically, using only two points (the start and end) but it can accept as many points as you wish.</p>
 <p>Some final photos of the mount in use:</p>
 <p>
 

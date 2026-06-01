@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="3d printed connectors to make plywood structures">
   <meta name="author" content="Edi Liberato">
-  <meta name="generator" content="Hugo 0.161.1">
+  <meta name="generator" content="Hugo 0.162.0">
 
   <!-- plugins -->
   
@@ -113,8 +113,8 @@
     <div class="row">
       <div class="col-lg-12 mx-auto">
         
-        <a href="/categories/programming"
-          class="text-primary">Programming</a>
+        <a href="/categories/cad"
+          class="text-primary">Cad</a>
         
         <h2>Plywood Brackets Revisited</h2>
         <div class="mb-3 post-meta">
@@ -129,14 +129,14 @@
         
         <div class ="tags-border">
           <div class="content mb-5">
-            <p>So much has changed in cadquery since I last used it in around 2022. Now we have the sketch API and assembly support</p>
+            <p>So much has changed in cadquery since I last used it in around 2022. Now we have the <strong>sketch API</strong> and <strong>assembly support</strong></p>
 <p>Since I wasn’t completely happy with my original <a href="https://eddieliberato.github.io/blog/2022-06-26-cadquery-models-collection/#plywood-connectors-13052020">plywood brackets</a>, I revised the model, this time taking advantage of the Sketch API.</p>
-<p>The changes I wanted to implement were increased bearing area for the plywood board and small notches where the board corners rest. Since those locations act as stress concentrators, that’s where this component tends to fail and relieving stress there is important.</p>
-<p>This new version also makes better use of parametric features to simplify tailoring the bracket so it clamps the plywood board while leaving only a minimal gap between the 3d printed bracket and jaw after the screw is tightened. In the script, I called the parameter that controls this gap &ldquo;magic_margin&rdquo;.</p>
+<p>The changes I wanted to implement were increased bearing area for the plywood board and small notches where the board corners rest. Since those locations act as <strong>stress concentrators</strong>, that’s where this component tends to fail and relieving stress there is important.</p>
+<p>This new version also makes better use of parametric features to simplify tailoring the bracket so it clamps the plywood board while leaving only a <strong>minimal gap</strong> between the 3d printed bracket and jaw after the screw is tightened. In the script, I called the parameter that controls this gap &ldquo;magic_margin&rdquo;.</p>
 <p>While everything could arguably be implemented using only boolean operations on 3D features, it was more straighfoward to do it using the 2D sketch methods.</p>
 
 
-<div id="threejs-1778089614176673092"
+<div id="threejs-1780293944241991206"
      class="threejs-viewer"
      style="width: 100%;
             height: 400px;"
@@ -152,7 +152,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
-const container = document.getElementById('threejs-1778089614176673092');
+const container = document.getElementById('threejs-1780293944241991206');
 
 requestAnimationFrame(() => {
   const width = container.offsetWidth || 600;
@@ -358,14 +358,14 @@ requestAnimationFrame(() => {
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">show</span><span class="p">(</span><span class="n">assy</span><span class="p">)</span>
 </span></span></code></pre></div><ul>
-<li>The cool line to pay attention here is the following one, where sketches are added and subtracted from the other.</li>
+<li>The cool line to pay attention here is the following one, where <strong>sketches are added and subtracted</strong> from the other.</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">final_sketch</span> <span class="o">=</span> <span class="n">tabs</span><span class="o">.</span><span class="n">face</span><span class="p">(</span><span class="n">ply_bearing</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;a&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">face</span><span class="p">(</span><span class="n">relief</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">)</span>
 </span></span></code></pre></div><ul>
-<li>Also usefull to know that you can use vector directions to select a face, This was used many times on the script as some important faces are oriented at 45 degrees. For example in:</li>
+<li>Also usefull to know that you can use <strong>vector directions to select a face</strong>, This was used many times on the script as some important faces are oriented at 45 degrees. For example in:</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">.</span><span class="n">faces</span><span class="p">(</span><span class="s2">&#34;&lt;(1, 1, 0)&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">workplane</span><span class="p">(</span><span class="n">centerOption</span><span class="o">=</span><span class="s2">&#34;CenterOfMass&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">hole</span><span class="p">(</span><span class="n">screw_clearance</span><span class="p">)</span>
-</span></span></code></pre></div><p>The assembly (assy) part was not necessary for such a simple model, but I included here as simple example of how to call it.</p>
+</span></span></code></pre></div><p>The <strong>assembly</strong> (assy) part was not necessary for such a simple model, but I included here as simple example of how to call it.</p>
 <p>
 
 
@@ -406,8 +406,6 @@ requestAnimationFrame(() => {
   </div>
 </section>
 
-
-
 <footer>
   <div class="container">
     <div class="row justify-content-center">
@@ -418,9 +416,9 @@ requestAnimationFrame(() => {
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
                                             href="/tags/3d-printing">3d printing</a></li>
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-                                            href="/tags/cad">Cad</a></li>
-            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
                                             href="/tags/cadquery">Cadquery</a></li>
+            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                                            href="/tags/electronics">Electronics</a></li>
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
                                             href="/tags/fea">Fea</a></li>
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
@@ -430,7 +428,17 @@ requestAnimationFrame(() => {
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
                                             href="/tags/lisp">Lisp</a></li>
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                                            href="/tags/materials">Materials</a></li>
+            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                                            href="/tags/maxima">Maxima</a></li>
+            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                                            href="/tags/mechanics">Mechanics</a></li>
+            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
                                             href="/tags/music">Music</a></li>
+            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                                            href="/tags/optics">Optics</a></li>
+            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                                            href="/tags/puzzles">Puzzles</a></li>
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
                                             href="/tags/python">Python</a></li>
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
@@ -443,49 +451,55 @@ requestAnimationFrame(() => {
       </div>
 
       
-        
-          <div class="col-lg-3 mb-5">
-            <h6 class="mb-4">Contact Me</h6>
-              <ul class="list-unstyled">
-              
-                <li class="mb-3"><a class="text-dark" href="mailto:eddie.liberatoe@gmail.com"><i
-                                    class="ti-email mr-3 text-primary"></i>eddie.liberatoe@gmail.com</a>
-              
-                </li>
+      
 
-              
-                <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Zürich, Switzerland</li>
-              
-                </li>
-            </ul>
-             
-          </div>
-
-
-      <div class="col-lg-3 mb-5">
-        <h6 class="mb-4">Categories</h6>
-        <ul class="list-unstyled">
-          <li class="mb-3"><a class="text-dark"
-              href="/categories/engineering">Engineering</a>
-          </li>
-          <li class="mb-3"><a class="text-dark"
-              href="/categories/non-technical">Non technical</a>
-          </li>
-          <li class="mb-3"><a class="text-dark"
-              href="/categories/programming">Programming</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="col-lg-3 mb-5">
-        <h6 class="mb-4">Quick Links</h6>
+      <div class="col-lg-3 mb-5 px-5">
+        <h6 class="mb-4">Contact Me</h6>
         <ul class="list-unstyled">
           
-          <li class="mb-3"><a class="text-dark" href="https://eddieliberato.github.io/about">About</a></li>
-          
-        </ul>
-      </div>
+          <li class="mb-3"><a class="text-dark" href="mailto:eddie.liberatoe@gmail.com"><i
+                              class="ti-email mr-3 text-primary"></i>eddie.liberatoe@gmail.com</a>
+            
+          </li>
 
+          
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Zürich, Switzerland</li>
+          
+        </li>
+    </ul>
+    
+    </div>
+
+    <div class="col-lg-6 mb-5 text-center">
+      <h6 class="mb-2">Categories</h6>
+
+      <div class="row">
+        <div class="col-4 mb-2">
+          <a class="text-dark"
+             href="/categories/cad">
+            Cad
+          </a>
+        </div>
+        <div class="col-4 mb-2">
+          <a class="text-dark"
+             href="/categories/engineering">
+            Engineering
+          </a>
+        </div>
+        <div class="col-4 mb-2">
+          <a class="text-dark"
+             href="/categories/non-technical">
+            Non technical
+          </a>
+        </div>
+        <div class="col-4 mb-2">
+          <a class="text-dark"
+             href="/categories/programming">
+            Programming
+          </a>
+        </div>
+      </div>
+    </div>
     </div>
   </div>
 </footer>
@@ -510,9 +524,5 @@ requestAnimationFrame(() => {
 <!-- Main Script -->
 
 <script src="https://eddieliberato.github.io/js/script.min.js"></script>
-
-
-
-
 </body>
 </html>

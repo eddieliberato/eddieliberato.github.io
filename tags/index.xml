@@ -1,96 +1,136 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on Edi Liberato blog</title>
-    <link>https://eddieliberato.github.io/tags/</link>
-    <description>Recent content in Tags on Edi Liberato blog</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 01 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://eddieliberato.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>3D Printing</title>
-      <link>https://eddieliberato.github.io/tags/3d-printing/</link>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://eddieliberato.github.io/tags/3d-printing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CAD</title>
-      <link>https://eddieliberato.github.io/tags/cad/</link>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://eddieliberato.github.io/tags/cad/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cadquery</title>
-      <link>https://eddieliberato.github.io/tags/cadquery/</link>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://eddieliberato.github.io/tags/cadquery/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Games</title>
-      <link>https://eddieliberato.github.io/tags/games/</link>
-      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://eddieliberato.github.io/tags/games/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Repair</title>
-      <link>https://eddieliberato.github.io/tags/repair/</link>
-      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://eddieliberato.github.io/tags/repair/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>VMs</title>
-      <link>https://eddieliberato.github.io/tags/vms/</link>
-      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://eddieliberato.github.io/tags/vms/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>https://eddieliberato.github.io/tags/python/</link>
-      <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://eddieliberato.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Music</title>
-      <link>https://eddieliberato.github.io/tags/music/</link>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://eddieliberato.github.io/tags/music/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>FEA</title>
-      <link>https://eddieliberato.github.io/tags/fea/</link>
-      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://eddieliberato.github.io/tags/fea/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Libfive</title>
-      <link>https://eddieliberato.github.io/tags/libfive/</link>
-      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>https://eddieliberato.github.io/tags/libfive/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Lisp</title>
-      <link>https://eddieliberato.github.io/tags/lisp/</link>
-      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>https://eddieliberato.github.io/tags/lisp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Scheme</title>
-      <link>https://eddieliberato.github.io/tags/scheme/</link>
-      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>https://eddieliberato.github.io/tags/scheme/</guid>
-      <description></description>
-    </item>
-  </channel>
+	<channel>
+		<title>Tags on Edi Liberato blog</title>
+		<link>https://eddieliberato.github.io/tags/</link>
+		<description>Recent content in Tags on Edi Liberato blog</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://eddieliberato.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Electronics</title>
+				<link>https://eddieliberato.github.io/tags/electronics/</link>
+				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/tags/electronics/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Maxima</title>
+				<link>https://eddieliberato.github.io/tags/maxima/</link>
+				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/tags/maxima/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Puzzles</title>
+				<link>https://eddieliberato.github.io/tags/puzzles/</link>
+				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/tags/puzzles/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Python</title>
+				<link>https://eddieliberato.github.io/tags/python/</link>
+				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/tags/python/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>3D Printing</title>
+				<link>https://eddieliberato.github.io/tags/3d-printing/</link>
+				<pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/tags/3d-printing/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Cadquery</title>
+				<link>https://eddieliberato.github.io/tags/cadquery/</link>
+				<pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/tags/cadquery/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Optics</title>
+				<link>https://eddieliberato.github.io/tags/optics/</link>
+				<pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/tags/optics/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Games</title>
+				<link>https://eddieliberato.github.io/tags/games/</link>
+				<pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/tags/games/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Repair</title>
+				<link>https://eddieliberato.github.io/tags/repair/</link>
+				<pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/tags/repair/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>VMs</title>
+				<link>https://eddieliberato.github.io/tags/vms/</link>
+				<pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/tags/vms/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Music</title>
+				<link>https://eddieliberato.github.io/tags/music/</link>
+				<pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/tags/music/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>FEA</title>
+				<link>https://eddieliberato.github.io/tags/fea/</link>
+				<pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/tags/fea/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Mechanics</title>
+				<link>https://eddieliberato.github.io/tags/mechanics/</link>
+				<pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/tags/mechanics/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Libfive</title>
+				<link>https://eddieliberato.github.io/tags/libfive/</link>
+				<pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/tags/libfive/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Lisp</title>
+				<link>https://eddieliberato.github.io/tags/lisp/</link>
+				<pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/tags/lisp/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Scheme</title>
+				<link>https://eddieliberato.github.io/tags/scheme/</link>
+				<pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/tags/scheme/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Materials</title>
+				<link>https://eddieliberato.github.io/tags/materials/</link>
+				<pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/tags/materials/</guid>
+				<description></description>
+			</item>
+	</channel>
 </rss>

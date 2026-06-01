@@ -5,7 +5,7 @@
    version="1.1"
    id="svg73"
    sodipodi:docname="rpi-support.svg"
-   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -22,10 +22,10 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="2.0493151"
-     inkscape:cx="370.85562"
-     inkscape:cy="131.01939"
-     inkscape:window-width="2560"
-     inkscape:window-height="1440"
+     inkscape:cx="348.1651"
+     inkscape:cy="176.4004"
+     inkscape:window-width="2516"
+     inkscape:window-height="1361"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -40,7 +40,8 @@
        stroke="#0000ff"
        fill="none"
        stroke-dasharray="0.5, 0.5"
-       id="g32">
+       id="g32"
+       transform="translate(0.28435331,-0.26689176)">
       <path
          d="m -19.940411,28.250782 -0.05077,0.03078 -0.04809,0.03219 -0.04529,0.03351 -0.04239,0.03475 -0.03939,0.03591 -0.03629,0.03699 -0.0331,0.03797 -0.02984,0.03886 -0.0265,0.03966 -0.0231,0.04036 -0.01964,0.04097 -0.01613,0.04147 -0.01259,0.04188 -0.009,0.04219 -0.0054,0.04239 -0.0018,0.04249"
          id="path4" />
@@ -121,7 +122,8 @@
     <g
        stroke="#82b9ff"
        fill="none"
-       id="g72">
+       id="g72"
+       transform="translate(0.28435331,-0.26689176)">
       <path
          d="M 4.2426407,2.4494897 -4.2426407,-2.4494897"
          id="path33" />

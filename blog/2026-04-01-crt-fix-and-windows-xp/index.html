@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Fixing a Sony PC CRT with messed up white balance. The repair involved getting a windows XP virtual machine to work and installing legacy software like Windas and HCFR. This post is mainly about the procedure to get an Windows XP virtual machine to work on modern Arch Linux using QEMU">
   <meta name="author" content="Edi Liberato">
-  <meta name="generator" content="Hugo 0.161.1">
+  <meta name="generator" content="Hugo 0.162.0">
 
   <!-- plugins -->
   
@@ -130,14 +130,13 @@
         <div class ="tags-border">
           <div class="content mb-5">
             <p>Let&rsquo;s fix a Sony Trinitron PC CRT with messed up white balance</p>
-<p>I happen to have this cool Sony Trinitron that I’d like to use for playing retro games. The problem, however, is that the colors are washed out and everything looks whiter than it should. If you’re old enough to remember the cathode ray tube (CRT) era, you’ll know this is usually a white balance calibration issue.</p>
+<p>I happen to have this cool Sony Trinitron that I’d like to use for playing retro games. The problem, however, is that the colors are washed out and everything looks whiter than it should. If you’re old enough to remember the cathode ray tube (CRT) era, you’ll know this is usually a <strong>white balance calibration issue</strong>.</p>
 <p>There’s some information online about performing this calibration using a piece of software called WinDAS for TTL control of the monitor, along with another tool called HCFR for color calibration. Both applications run best on Windows XP.</p>
-<p>Setting up a Windows XP virtual machine on a modern Arch Linux host is the part where I found the least amount of useful information. In this post, we’ll go through that process step by step.</p>
+<p>Setting up a <strong>Windows XP virtual machine on a Arch Linux host</strong> is the part where I found the least amount of useful information. In this post, we’ll go through that process step by step.</p>
 <div>
     <h4>Table of Contents</h4>
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#overview">Overview</a></li>
     <li><a href="#setting-up-a-windows-xp-vm-on-arch-linux">Setting up a Windows XP VM On Arch Linux</a>
       <ul>
         <li><a href="#installing-qemu">Installing QEMU</a></li>
@@ -156,13 +155,10 @@
 </nav>
 </div>
 
-<h3 id="overview">Overview</h3>
-<p>Here is the overview of the steps discussed on this post:</p>
-<p>Installing QEMU -&gt; Finding WinXP Image -&gt; Setting up the VM -&gt; Gathering Apps -&gt; Running the VM -&gt; Installing Drivers</p>
 <h3 id="setting-up-a-windows-xp-vm-on-arch-linux">Setting up a Windows XP VM On Arch Linux</h3>
 <h4 id="installing-qemu">Installing QEMU</h4>
-<p>In a modern Arch Linux workflow, when you need to deal with proprietary Windows or macOS nonsense, you’d typically use Quickemu and move on with your life. Unfortunately, Quickemu doesn’t support legacy operating systems like Windows XP.</p>
-<p>The solution is to go one step lower on the abstraction ladder and use QEMU directly. If you don’t already have it installed, run:</p>
+<p>In a modern Arch Linux workflow, when you need to deal with proprietary Windows or macOS nonsense, you’d typically use <strong>Quickemu</strong> and move on with your life. Unfortunately, Quickemu doesn’t support legacy operating systems like Windows XP.</p>
+<p>The solution is to go one step lower on the abstraction ladder and use <strong>QEMU</strong> directly. If you don’t already have it installed, run:</p>
 <pre tabindex="0"><code>sudo pacman -S qemu-desktop
 </code></pre><h4 id="finding-a-windows-xp-image">Finding a Windows XP Image</h4>
 <p>Next, we need a Windows XP image. Fortunately, the Internet Archive has us covered. You can download an ISO from:</p>
@@ -278,8 +274,6 @@ Bus 001 Device 009: ID 0971:2007 Gretag-Macbeth AG ColorMunki Photo
   </div>
 </section>
 
-
-
 <footer>
   <div class="container">
     <div class="row justify-content-center">
@@ -290,9 +284,9 @@ Bus 001 Device 009: ID 0971:2007 Gretag-Macbeth AG ColorMunki Photo
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
                                             href="/tags/3d-printing">3d printing</a></li>
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-                                            href="/tags/cad">Cad</a></li>
-            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
                                             href="/tags/cadquery">Cadquery</a></li>
+            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                                            href="/tags/electronics">Electronics</a></li>
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
                                             href="/tags/fea">Fea</a></li>
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
@@ -302,7 +296,17 @@ Bus 001 Device 009: ID 0971:2007 Gretag-Macbeth AG ColorMunki Photo
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
                                             href="/tags/lisp">Lisp</a></li>
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                                            href="/tags/materials">Materials</a></li>
+            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                                            href="/tags/maxima">Maxima</a></li>
+            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                                            href="/tags/mechanics">Mechanics</a></li>
+            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
                                             href="/tags/music">Music</a></li>
+            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                                            href="/tags/optics">Optics</a></li>
+            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                                            href="/tags/puzzles">Puzzles</a></li>
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
                                             href="/tags/python">Python</a></li>
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
@@ -315,49 +319,55 @@ Bus 001 Device 009: ID 0971:2007 Gretag-Macbeth AG ColorMunki Photo
       </div>
 
       
-        
-          <div class="col-lg-3 mb-5">
-            <h6 class="mb-4">Contact Me</h6>
-              <ul class="list-unstyled">
-              
-                <li class="mb-3"><a class="text-dark" href="mailto:eddie.liberatoe@gmail.com"><i
-                                    class="ti-email mr-3 text-primary"></i>eddie.liberatoe@gmail.com</a>
-              
-                </li>
+      
 
-              
-                <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Zürich, Switzerland</li>
-              
-                </li>
-            </ul>
-             
-          </div>
-
-
-      <div class="col-lg-3 mb-5">
-        <h6 class="mb-4">Categories</h6>
-        <ul class="list-unstyled">
-          <li class="mb-3"><a class="text-dark"
-              href="/categories/engineering">Engineering</a>
-          </li>
-          <li class="mb-3"><a class="text-dark"
-              href="/categories/non-technical">Non technical</a>
-          </li>
-          <li class="mb-3"><a class="text-dark"
-              href="/categories/programming">Programming</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="col-lg-3 mb-5">
-        <h6 class="mb-4">Quick Links</h6>
+      <div class="col-lg-3 mb-5 px-5">
+        <h6 class="mb-4">Contact Me</h6>
         <ul class="list-unstyled">
           
-          <li class="mb-3"><a class="text-dark" href="https://eddieliberato.github.io/about">About</a></li>
-          
-        </ul>
-      </div>
+          <li class="mb-3"><a class="text-dark" href="mailto:eddie.liberatoe@gmail.com"><i
+                              class="ti-email mr-3 text-primary"></i>eddie.liberatoe@gmail.com</a>
+            
+          </li>
 
+          
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Zürich, Switzerland</li>
+          
+        </li>
+    </ul>
+    
+    </div>
+
+    <div class="col-lg-6 mb-5 text-center">
+      <h6 class="mb-2">Categories</h6>
+
+      <div class="row">
+        <div class="col-4 mb-2">
+          <a class="text-dark"
+             href="/categories/cad">
+            Cad
+          </a>
+        </div>
+        <div class="col-4 mb-2">
+          <a class="text-dark"
+             href="/categories/engineering">
+            Engineering
+          </a>
+        </div>
+        <div class="col-4 mb-2">
+          <a class="text-dark"
+             href="/categories/non-technical">
+            Non technical
+          </a>
+        </div>
+        <div class="col-4 mb-2">
+          <a class="text-dark"
+             href="/categories/programming">
+            Programming
+          </a>
+        </div>
+      </div>
+    </div>
     </div>
   </div>
 </footer>
@@ -382,9 +392,5 @@ Bus 001 Device 009: ID 0971:2007 Gretag-Macbeth AG ColorMunki Photo
 <!-- Main Script -->
 
 <script src="https://eddieliberato.github.io/js/script.min.js"></script>
-
-
-
-
 </body>
 </html>

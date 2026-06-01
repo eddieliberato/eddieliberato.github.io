@@ -5,7 +5,7 @@
    version="1.1"
    id="svg61"
    sodipodi:docname="plywood-connectors.svg"
-   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -22,14 +22,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.8465753"
-     inkscape:cx="340.63056"
-     inkscape:cy="155.69362"
-     inkscape:window-width="1920"
-     inkscape:window-height="1080"
+     inkscape:cx="307.86722"
+     inkscape:cy="171.93991"
+     inkscape:window-width="2516"
+     inkscape:window-height="1361"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g61" />
+     inkscape:current-layer="g61"
+     showgrid="false" />
   <g
      transform="scale(7.800000000000001, -7.800000000000001)   translate(1.2820512820512824,-40.0)"
      stroke-width="0.1"
@@ -42,7 +43,7 @@
        stroke-dasharray="0.1,0.1"
        id="g36"
        style="stroke-width:0.25641;stroke-dasharray:0.25641, 0.25641;stroke-dashoffset:0"
-       transform="translate(25.153734,-6.8496066)">
+       transform="translate(26.355043,-8.6721072)">
       <path
          d="M 6.3535534,14.131728 6.4510604,14.034218 6.7386936,13.746585 7.2020293,13.28325 7.8178339,12.667445 8.5552284,11.93005 9.3772368,11.108042 10.242641,10.242639 11.108044,9.3772353 11.930052,8.5552269 12.667447,7.8178324 13.283252,7.2020278 13.746587,6.7386921 14.03422,6.4510589 14.13173,6.3535519"
          id="path29"
@@ -70,7 +71,7 @@
        fill="none"
        id="g60"
        style="stroke-width:0.641026;stroke-dasharray:none"
-       transform="translate(25.153734,-6.8496066)">
+       transform="translate(26.355043,-8.6721072)">
       <path
          d="M 2,40 H 4"
          id="path37"
@@ -175,7 +176,7 @@
        id="g26"
        style="stroke-width:0.254529;stroke-dasharray:0.254529, 0.254529;stroke-dashoffset:0"
        inkscape:label="g26"
-       transform="matrix(1.0073923,0,0,1.0073923,25.363366,-6.6438589)">
+       transform="matrix(1.0073923,0,0,1.0073923,26.564675,-8.4663595)">
       <path
          d="M 32.333333,32.333333 28.797799,28.797799"
          id="path13"
@@ -212,7 +213,7 @@
        fill="none"
        id="g32"
        style="stroke-width:0.636322;stroke-dasharray:none"
-       transform="matrix(1.0073923,0,0,1.0073923,25.363366,-6.6438589)">
+       transform="matrix(1.0073923,0,0,1.0073923,26.564675,-8.4663595)">
       <path
          d="M 22.414214,42.252453 31.051151,33.615516 42.252453,22.414214"
          id="path27"

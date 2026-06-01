@@ -5,9 +5,9 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Edi Liberato blog">
+  <meta name="description" content="Build a simple Raspberry Pi optical breadboard mount with CadQuery and 3D printing. A fast, minimal solution for prototyping setups">
   <meta name="author" content="Edi Liberato">
-  <meta name="generator" content="Hugo 0.161.1">
+  <meta name="generator" content="Hugo 0.162.0">
 
   <!-- plugins -->
   
@@ -113,8 +113,8 @@
     <div class="row">
       <div class="col-lg-12 mx-auto">
         
-        <a href="/categories/programming"
-          class="text-primary">Programming</a>
+        <a href="/categories/cad"
+          class="text-primary">Cad</a>
         
         <h2>Simple Optical Breadboard Raspberry Pi Support</h2>
         <div class="mb-3 post-meta">
@@ -134,12 +134,12 @@
 &ndash; Terry A. Davis</p>
 </blockquote>
 <p>The problem here was mounting a Raspberry Pi streaming from a digital camera in an optical setup to a display. Simply leaving the Pi dangling off the setup is cheap and sloppy. For prototyping, however, a fully enclosed, polished mount is not only unnecessary but even undesirable, as it hinders probing and rewiring.</p>
-<p>In this context, the mount only needs to hold the device, nothing more. Ideally, it shouldn’t take up breadboard real estate as this is valuable. It should also be easy to move or remove without tools.</p>
-<p>Finally, in my prototyping philosophy, moving fast is king. Developing and testing quickly matters more than chasing a perfect (and often unattainable) solution. Optimizations should come later.</p>
+<p>In this context, <strong>the mount only needs to hold the device, nothing more</strong>. Ideally, it shouldn’t take up breadboard real estate as this is valuable. It should also be easy to move or remove without tools.</p>
+<p>Finally, in my prototyping philosophy, moving fast is king. <strong>Developing and testing quickly matters more than chasing a perfect (and often unattainable) solution</strong>. Optimizations should come later.</p>
 <p>Fifteen minutes of CAD, half an hour of 3D printing (for the pair), and this was the result:</p>
 
 
-<div id="threejs-1778089614171519247"
+<div id="threejs-1780293944237927170"
      class="threejs-viewer"
      style="width: 100%;
             height: 400px;"
@@ -155,7 +155,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
-const container = document.getElementById('threejs-1778089614171519247');
+const container = document.getElementById('threejs-1780293944237927170');
 
 requestAnimationFrame(() => {
   const width = container.offsetWidth || 600;
@@ -328,7 +328,7 @@ requestAnimationFrame(() => {
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">.</span><span class="n">spline</span><span class="p">([(</span><span class="n">slot_depth</span><span class="p">,</span> <span class="n">total_height</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">bt_thick</span><span class="o">+</span><span class="n">plate_thick</span><span class="o">+</span><span class="n">ph_offset</span><span class="p">)],</span>
 </span></span><span class="line"><span class="cl">        <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)],</span> <span class="kc">False</span><span class="p">)</span>
-</span></span></code></pre></div><p>This is illustrated on the figure on the left. Just as an auxiliary example, on the right figure we see the output if the vector at the end point would point straight at negative direction along X axis (-1, 0).</p>
+</span></span></code></pre></div><p>This is illustrated on the figure on the left. Just as an auxiliary example, on the right figure we see the output <strong>if</strong> the vector at the end point would point straight at negative direction along X axis (-1, 0).</p>
 <p><img src="spline-example.svg" alt="spline example"></p>
 <p>The boolen False in the end is about the &ldquo;periodic&rdquo; argument. One uses</p>
 <ul>
@@ -356,7 +356,8 @@ requestAnimationFrame(() => {
      style="max-width:100%; height:auto;"
      loading="lazy">
 </p>
-<p>Standoffs makes it easy to mount different add-on boards on top of the Pi. As the mount itself just attaches to the edge of the plate, it wastes almost no space on the breadboard. Furthermore, it is easy and convenient to relocate when the setup changes as no tools are needed. 😎</p>
+<p>Standoffs makes it easy to mount different add-on boards on top of the Pi.</p>
+<p>As the mount itself just attaches to the edge of the plate, it wastes almost no space on the breadboard. Furthermore, it is easy and convenient to relocate when the setup changes as no tools are needed. 😎</p>
 <p>📎 <strong>Download:</strong>
 <a href="rpi-breadboard-support.zip">Raspberry Pi Optical Breadboard Mount</a></p>
 <h4 id="post-scriptum"><em>Post Scriptum</em></h4>
@@ -374,8 +375,6 @@ requestAnimationFrame(() => {
   </div>
 </section>
 
-
-
 <footer>
   <div class="container">
     <div class="row justify-content-center">
@@ -386,9 +385,9 @@ requestAnimationFrame(() => {
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
                                             href="/tags/3d-printing">3d printing</a></li>
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-                                            href="/tags/cad">Cad</a></li>
-            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
                                             href="/tags/cadquery">Cadquery</a></li>
+            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                                            href="/tags/electronics">Electronics</a></li>
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
                                             href="/tags/fea">Fea</a></li>
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
@@ -398,7 +397,17 @@ requestAnimationFrame(() => {
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
                                             href="/tags/lisp">Lisp</a></li>
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                                            href="/tags/materials">Materials</a></li>
+            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                                            href="/tags/maxima">Maxima</a></li>
+            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                                            href="/tags/mechanics">Mechanics</a></li>
+            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
                                             href="/tags/music">Music</a></li>
+            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                                            href="/tags/optics">Optics</a></li>
+            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
+                                            href="/tags/puzzles">Puzzles</a></li>
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
                                             href="/tags/python">Python</a></li>
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
@@ -411,49 +420,55 @@ requestAnimationFrame(() => {
       </div>
 
       
-        
-          <div class="col-lg-3 mb-5">
-            <h6 class="mb-4">Contact Me</h6>
-              <ul class="list-unstyled">
-              
-                <li class="mb-3"><a class="text-dark" href="mailto:eddie.liberatoe@gmail.com"><i
-                                    class="ti-email mr-3 text-primary"></i>eddie.liberatoe@gmail.com</a>
-              
-                </li>
+      
 
-              
-                <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Zürich, Switzerland</li>
-              
-                </li>
-            </ul>
-             
-          </div>
-
-
-      <div class="col-lg-3 mb-5">
-        <h6 class="mb-4">Categories</h6>
-        <ul class="list-unstyled">
-          <li class="mb-3"><a class="text-dark"
-              href="/categories/engineering">Engineering</a>
-          </li>
-          <li class="mb-3"><a class="text-dark"
-              href="/categories/non-technical">Non technical</a>
-          </li>
-          <li class="mb-3"><a class="text-dark"
-              href="/categories/programming">Programming</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="col-lg-3 mb-5">
-        <h6 class="mb-4">Quick Links</h6>
+      <div class="col-lg-3 mb-5 px-5">
+        <h6 class="mb-4">Contact Me</h6>
         <ul class="list-unstyled">
           
-          <li class="mb-3"><a class="text-dark" href="https://eddieliberato.github.io/about">About</a></li>
-          
-        </ul>
-      </div>
+          <li class="mb-3"><a class="text-dark" href="mailto:eddie.liberatoe@gmail.com"><i
+                              class="ti-email mr-3 text-primary"></i>eddie.liberatoe@gmail.com</a>
+            
+          </li>
 
+          
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Zürich, Switzerland</li>
+          
+        </li>
+    </ul>
+    
+    </div>
+
+    <div class="col-lg-6 mb-5 text-center">
+      <h6 class="mb-2">Categories</h6>
+
+      <div class="row">
+        <div class="col-4 mb-2">
+          <a class="text-dark"
+             href="/categories/cad">
+            Cad
+          </a>
+        </div>
+        <div class="col-4 mb-2">
+          <a class="text-dark"
+             href="/categories/engineering">
+            Engineering
+          </a>
+        </div>
+        <div class="col-4 mb-2">
+          <a class="text-dark"
+             href="/categories/non-technical">
+            Non technical
+          </a>
+        </div>
+        <div class="col-4 mb-2">
+          <a class="text-dark"
+             href="/categories/programming">
+            Programming
+          </a>
+        </div>
+      </div>
+    </div>
     </div>
   </div>
 </footer>
@@ -478,9 +493,5 @@ requestAnimationFrame(() => {
 <!-- Main Script -->
 
 <script src="https://eddieliberato.github.io/js/script.min.js"></script>
-
-
-
-
 </body>
 </html>

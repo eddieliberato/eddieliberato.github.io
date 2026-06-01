@@ -165,9 +165,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="2"
-     inkscape:cx="304"
-     inkscape:cy="238.5"
+     inkscape:zoom="4"
+     inkscape:cx="564.5"
+     inkscape:cy="163"
      inkscape:window-width="2516"
      inkscape:window-height="1361"
      inkscape:window-x="0"
@@ -253,15 +253,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;fill-opacity:1;stroke:#2affd5;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-       x="338.99335"
-       y="387.58173"
+       x="197.67964"
+       y="312.36276"
        id="text14"
-       transform="translate(-141.31371,-80.17564)"
        inkscape:label="final value"><tspan
          sodipodi:role="line"
          id="tspan14"
-         x="338.99335"
-         y="387.58173">5/6R</tspan></text>
+         x="197.67964"
+         y="312.36276">5/6R</tspan></text>
   </g>
   <g
      id="g1"
@@ -310,14 +309,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:#82b9ff;fill-opacity:1;stroke:#2affd5;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-       x="415.47696"
+       x="410.78058"
        y="270.41599"
        id="text5-1"
        inkscape:label="i-"><tspan
          sodipodi:role="line"
          id="tspan5-0"
-         x="415.47696"
-         y="270.41599">i-</tspan></text>
+         x="410.78058"
+         y="270.41599">i -</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:21.3333px;line-height:0.9;font-family:'Symbols Nerd Font Mono';-inkscape-font-specification:'Symbols Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#82b9ff;fill-opacity:1;stroke:#00ff00;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
@@ -431,38 +430,38 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;fill-opacity:1;stroke:#2affd5;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        x="209.83147"
-       y="305.58173"
+       y="309.41409"
        id="text10"
        inkscape:label="one-third-left"><tspan
          sodipodi:role="line"
          id="tspan10"
          x="209.83147"
-         y="305.58173">1/3R</tspan></text>
+         y="309.41409">1/3R</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;fill-opacity:1;stroke:#2affd5;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        x="337.81201"
-       y="305.58173"
+       y="309.41409"
        id="text11"
        inkscape:label="one-sixth"><tspan
          sodipodi:role="line"
          id="tspan11"
          x="337.81201"
-         y="305.58173">1/6R</tspan></text>
+         y="309.41409">1/6R</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;fill-opacity:1;stroke:#2affd5;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        x="465.79257"
-       y="305.58173"
+       y="309.41409"
        id="text12"
        inkscape:label="one-third-right"><tspan
          sodipodi:role="line"
          id="tspan12"
          x="465.79257"
-         y="305.58173">1/3R</tspan><tspan
+         y="309.41409">1/3R</tspan><tspan
          sodipodi:role="line"
          x="465.79257"
-         y="324.78171"
+         y="328.61407"
          id="tspan13" /></text>
   </g>
   <g
@@ -592,14 +591,14 @@
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:#82b9ff;fill-opacity:1;stroke:#2affd5;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-           x="452.54501"
-           y="117.80974"
+           x="446.14502"
+           y="120.82167"
            id="text5"
            inkscape:label="i-"><tspan
              sodipodi:role="line"
              id="tspan5"
-             x="452.54501"
-             y="117.80974">i-</tspan></text>
+             x="446.14502"
+             y="120.82167">i -</tspan></text>
       </g>
     </g>
     <g

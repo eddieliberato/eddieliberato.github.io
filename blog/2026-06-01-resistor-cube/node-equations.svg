@@ -85,15 +85,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="2.7534246"
-     inkscape:cx="341.93782"
-     inkscape:cy="175.41791"
-     inkscape:window-width="2560"
-     inkscape:window-height="1440"
+     inkscape:zoom="1.9469652"
+     inkscape:cx="485.37077"
+     inkscape:cy="233.69704"
+     inkscape:window-width="2516"
+     inkscape:window-height="1361"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g1"
+     inkscape:current-layer="g2-38-3-0-5-8-0"
      showgrid="false">
     <inkscape:page
        x="0"
@@ -172,27 +172,13 @@
           <text
              xml:space="preserve"
              style="font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;stroke:#d3bc5f;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-             x="301.96558"
-             y="31.944826"
+             x="279.98392"
+             y="50.310886"
              id="text6-1"><tspan
                sodipodi:role="line"
                id="tspan6-2"
-               x="301.96558"
-               y="31.944826">I_ad = V_a-V_d</tspan></text>
-          <text
-             xml:space="preserve"
-             style="font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;stroke:#d3bc5f;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-             x="410.14124"
-             y="55.76667"
-             id="text8-7"><tspan
-               sodipodi:role="line"
-               id="tspan8-0"
-               x="410.14124"
-               y="55.76667">R_ad</tspan></text>
-          <path
-             style="fill:none;stroke:#d3bc5f;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-             d="m 391.9175,38.889356 h 86.85809"
-             id="path8-9" />
+               x="279.98392"
+               y="50.310886">I_ad = (V_a-V_d)/R_ad</tspan></text>
         </g>
       </g>
     </g>
@@ -257,27 +243,13 @@
           <text
              xml:space="preserve"
              style="font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;stroke:#d3bc5f;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-             x="301.96558"
-             y="31.944826"
+             x="257.16562"
+             y="48.901844"
              id="text6"><tspan
                sodipodi:role="line"
                id="tspan6"
-               x="301.96558"
-               y="31.944826">I_ae = V_a-V_e</tspan></text>
-          <text
-             xml:space="preserve"
-             style="font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;stroke:#d3bc5f;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-             x="410.14124"
-             y="55.76667"
-             id="text8"><tspan
-               sodipodi:role="line"
-               id="tspan8"
-               x="410.14124"
-               y="55.76667">R_ae</tspan></text>
-          <path
-             style="fill:none;stroke:#d3bc5f;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-             d="m 391.9175,38.889356 h 86.85809"
-             id="path8" />
+               x="257.16562"
+               y="48.901844">I_ae = (V_a-V_e)/R_ae</tspan></text>
         </g>
       </g>
     </g>
@@ -342,27 +314,13 @@
           <text
              xml:space="preserve"
              style="font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;stroke:#d3bc5f;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-             x="301.96558"
-             y="31.944826"
+             x="256.94162"
+             y="48.651295"
              id="text6-9"><tspan
                sodipodi:role="line"
                id="tspan6-7"
-               x="301.96558"
-               y="31.944826">I_ab = V_a-V_b</tspan></text>
-          <text
-             xml:space="preserve"
-             style="font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;stroke:#d3bc5f;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-             x="410.14124"
-             y="55.76667"
-             id="text8-3"><tspan
-               sodipodi:role="line"
-               id="tspan8-6"
-               x="410.14124"
-               y="55.76667">R_ab</tspan></text>
-          <path
-             style="fill:none;stroke:#d3bc5f;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-             d="m 391.9175,38.889356 h 86.85809"
-             id="path8-1" />
+               x="256.94162"
+               y="48.651295">I_ab = (V_a-V_b)/R_ab</tspan></text>
         </g>
       </g>
     </g>

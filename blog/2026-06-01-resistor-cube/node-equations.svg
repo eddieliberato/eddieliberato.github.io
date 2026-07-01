@@ -86,14 +86,14 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.9469652"
-     inkscape:cx="485.37077"
+     inkscape:cx="485.11396"
      inkscape:cy="233.69704"
-     inkscape:window-width="2516"
-     inkscape:window-height="1361"
+     inkscape:window-width="2560"
+     inkscape:window-height="1440"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g2-38-3-0-5-8-0"
+     inkscape:current-layer="g1"
      showgrid="false">
     <inkscape:page
        x="0"
@@ -161,7 +161,7 @@
          transform="matrix(0,0.73499854,-0.73499854,0,239.91732,17.102027)"
          style="stroke:#d3bc5f;fill:none;stroke-opacity:1">
         <path
-           style="display:inline;fill:none;stroke:#d3bc5f;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#ArrowWideRounded-7);stroke-opacity:1"
+           style="display:inline;fill:none;stroke:#f2f2f2;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#ArrowWideRounded-7);stroke-opacity:1"
            d="m 391.66892,18.496362 -181.78985,0.14943"
            id="path1-2"
            transform="matrix(1.2,0,0,1.2,25.736753,48.454128)" />
@@ -171,7 +171,7 @@
            style="stroke:#d3bc5f;fill:none;stroke-opacity:1">
           <text
              xml:space="preserve"
-             style="font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;stroke:#d3bc5f;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+             style="font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;stroke:#f2f2f2;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
              x="279.98392"
              y="50.310886"
              id="text6-1"><tspan
@@ -232,7 +232,7 @@
          transform="matrix(0,0.73499854,-0.73499854,0,255.46612,-88.791636)"
          style="stroke:#d3bc5f;fill:none;stroke-opacity:1">
         <path
-           style="display:inline;fill:none;stroke:#d3bc5f;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#ArrowWideRounded);stroke-opacity:1"
+           style="display:inline;fill:none;stroke:#f2f2f2;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#ArrowWideRounded);stroke-opacity:1"
            d="m 391.66892,18.496362 -181.78985,0.14943"
            id="path1"
            transform="matrix(1.2,0,0,1.2,25.736753,48.454128)" />
@@ -242,7 +242,7 @@
            style="stroke:#d3bc5f;fill:none;stroke-opacity:1">
           <text
              xml:space="preserve"
-             style="font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;stroke:#d3bc5f;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+             style="font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;stroke:#f2f2f2;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
              x="257.16562"
              y="48.901844"
              id="text6"><tspan
@@ -303,7 +303,7 @@
          transform="matrix(0,0.73499854,-0.73499854,0,192.42593,-87.984678)"
          style="stroke:#d3bc5f;fill:none;stroke-opacity:1">
         <path
-           style="display:inline;fill:none;stroke:#d3bc5f;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#ArrowWideRounded-0);stroke-opacity:1"
+           style="display:inline;fill:none;stroke:#f2f2f2;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#ArrowWideRounded-0);stroke-opacity:1"
            d="m 391.66892,18.496362 -181.78985,0.14943"
            id="path1-8"
            transform="matrix(1.2,0,0,1.2,25.736753,48.454128)" />
@@ -313,7 +313,7 @@
            style="stroke:#d3bc5f;fill:none;stroke-opacity:1">
           <text
              xml:space="preserve"
-             style="font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;stroke:#d3bc5f;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+             style="font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;stroke:#f2f2f2;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
              x="256.94162"
              y="48.651295"
              id="text6-9"><tspan
@@ -406,7 +406,7 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;stroke:#d3bc5f;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+       style="font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;stroke:#f2f2f2;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
        x="224.20013"
        y="395.0065"
        id="text9"

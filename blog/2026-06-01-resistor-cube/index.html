@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Learn how to calculate the equivalent resistance of a resistor cube with unequal resistor values using nodal analysis, Python (NumPy), and Maxima symbolic mathematics.">
   <meta name="author" content="Edi Liberato">
-  <meta name="generator" content="Hugo 0.162.0">
+  <meta name="generator" content="Hugo 0.163.3">
 
   <!-- plugins -->
   
@@ -137,7 +137,8 @@
         <div class ="tags-border">
           <div class="content mb-5">
             <p>Even my grandma knows the answer to this one when all the resistors are the same. But what if they are not?</p>
-<p>The classic problem in <del>engineering</del> physics (it&rsquo;s always the physicists with this kind of nonsense 😂😂) goes something like this: <strong>What is the equivalent resistance across the body diagonal of a one-ohm resistor cube?</strong> This version is easy to solve because all the resistors have the same value, but recently I came across a version of the puzzle with a pesky resistor breaking the symmetry.</p>
+<p>The classic problem in <del>engineering</del> physics (it&rsquo;s always the physicists with this kind of nonsense 😂😂) goes something like this: <strong>What is the equivalent resistance across the body diagonal of a one-ohm resistor cube?</strong></p>
+<p>When that is the question being asked, it is easy to solve because all the resistors have the same value. Recently I came across a version of the puzzle with a pesky resistor breaking the symmetry, however.</p>
 <div>
     <h4>Table of Contents</h4>
     <nav id="TableOfContents">
@@ -213,7 +214,7 @@
 <p>One subtle detail: this system is singular. In Python, this is easy to handle by solving the system using the<a href="https://www.researchgate.net/profile/Angela-Fontan/publication/354949195_On_the_properties_of_Laplacian_pseudoinverses/links/615d57675a481543a888250b/On-the-properties-of-Laplacian-pseudoinverses.pdf">pseudoinverse method</a> from the <em>linalg</em> package.</p>
 <h3 id="going-up-a-notch">Going up a notch</h3>
 <p>Using NumPy or any other numerical solver gets the job done, but it is not that hard to come up with a more elegant solution.</p>
-<p>Since we already went through the trouble of writing down all the equations, we can go up a notch and use<a href="https://maxima.sourceforge.io/">Maxima</a> to find a symbolic solution.</p>
+<p>Since we already went through the trouble of writing down all the equations, we can step up a notch and use<a href="https://maxima.sourceforge.io/">Maxima</a> to find a symbolic solution.</p>
 <pre tabindex="0"><code class="language-maxima" data-lang="maxima">/* ------------------------------------------------
 Maxima code to solve the pesky resistor cube puzzle 
    
@@ -245,7 +246,7 @@ I_ae : (V_a - V_e) / R_ae;
 I_ad : (V_a - V_d) / R;
 I_ab : (V_a - V_b) / R;
 I_in : I_ae + I_ad + I_ab;
-R_eq : 1/I_in;
+R_eq : V_a / I_in;
 
 print(ratsimp(R_eq));
 
@@ -258,6 +259,7 @@ print(final_sol);
 </span></span><span class="line"><span class="cl"><span class="m">11</span> R R_ae + <span class="m">9</span> R
 </span></span><span class="line"><span class="cl">──────────────── 
 </span></span><span class="line"><span class="cl"><span class="m">10</span> R_ae + <span class="m">14</span> R
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="m">47</span>
 </span></span><span class="line"><span class="cl">── 

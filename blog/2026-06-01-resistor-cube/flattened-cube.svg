@@ -166,14 +166,14 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="2"
-     inkscape:cx="332.75"
+     inkscape:cx="332.25"
      inkscape:cy="201"
      inkscape:window-width="2560"
      inkscape:window-height="1440"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g1"
+     inkscape:current-layer="svg1"
      showgrid="false"
      showguides="true">
     <inkscape:page
@@ -229,7 +229,7 @@
        transform="scale(1,-1)" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;fill-opacity:0.1;stroke:#00ff00;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;fill-opacity:0.1;stroke:#f2f2f2;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        x="73.431976"
        y="289.5119"
        id="text4-6-2"
@@ -240,7 +240,7 @@
          y="289.5119">Probe+</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:21.3333px;line-height:0.9;font-family:'Symbols Nerd Font Mono';-inkscape-font-specification:'Symbols Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#82b9ff;fill-opacity:1;stroke:#00ff00;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       style="font-size:21.3333px;line-height:0.9;font-family:'Symbols Nerd Font Mono';-inkscape-font-specification:'Symbols Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#82b9ff;fill-opacity:1;stroke:#f2f2f2;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        x="298.75897"
        y="290.5119"
        id="text3-0-3"
@@ -249,7 +249,7 @@
          id="tspan3-5-6"
          x="298.75897"
          y="290.5119"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:2;stroke-dasharray:none;stroke:#00ff00">Probe-</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:2;stroke-dasharray:none;stroke:#f2f2f2">Probe-</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;fill-opacity:1;stroke:#2affd5;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
@@ -319,7 +319,7 @@
          y="270.41599">i-</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:21.3333px;line-height:0.9;font-family:'Symbols Nerd Font Mono';-inkscape-font-specification:'Symbols Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#82b9ff;fill-opacity:1;stroke:#00ff00;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       style="font-size:21.3333px;line-height:0.9;font-family:'Symbols Nerd Font Mono';-inkscape-font-specification:'Symbols Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#82b9ff;fill-opacity:1;stroke:#f2f2f2;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        x="567.0531"
        y="288.18753"
        id="text3-0"
@@ -328,10 +328,10 @@
          id="tspan3-5"
          x="567.0531"
          y="288.18753"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:2;stroke-dasharray:none;stroke:#00ff00">Probe-</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:2;stroke-dasharray:none;stroke:#f2f2f2">Probe-</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;fill-opacity:0.1;stroke:#00ff00;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;fill-opacity:0.1;stroke:#f2f2f2;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        x="85.765083"
        y="288.18753"
        id="text4-6"
@@ -578,7 +578,7 @@
          inkscape:label="node labels">
         <text
            xml:space="preserve"
-           style="font-size:21.3333px;line-height:0.9;font-family:'Symbols Nerd Font Mono';-inkscape-font-specification:'Symbols Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#82b9ff;fill-opacity:1;stroke:#00ff00;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           style="font-size:21.3333px;line-height:0.9;font-family:'Symbols Nerd Font Mono';-inkscape-font-specification:'Symbols Nerd Font Mono';writing-mode:lr-tb;direction:ltr;fill:#82b9ff;fill-opacity:1;stroke:#f2f2f2;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
            x="604.12177"
            y="135.58199"
            id="text3"
@@ -587,7 +587,7 @@
              id="tspan3"
              x="604.12177"
              y="135.58199"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:2;stroke-dasharray:none;stroke:#00ff00">Probe-</tspan></text>
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:2;stroke-dasharray:none;stroke:#f2f2f2">Probe-</tspan></text>
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:#82b9ff;fill-opacity:1;stroke:#2affd5;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
@@ -717,7 +717,7 @@
              y="119.14226">i+</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;fill-opacity:0.1;stroke:#00ff00;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.3333px;line-height:0.9;font-family:FreeMono;-inkscape-font-specification:FreeMono;writing-mode:lr-tb;direction:ltr;fill:none;fill-opacity:0.1;stroke:#f2f2f2;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
            x="24.816755"
            y="136.99727"
            id="text4"

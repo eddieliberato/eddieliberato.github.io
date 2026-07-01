@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Wed, 01 Jul 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://eddieliberato.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Infinite Resistors Grid</title>
+				<link>https://eddieliberato.github.io/blog/2026-07-01-infinite-resistor/</link>
+				<pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/blog/2026-07-01-infinite-resistor/</guid>
+				<description>&lt;p&gt;On this infinite grid of ideal one-ohm resistors, what&amp;rsquo;s the equivalent resistance between the two marked nodes?&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Pesky Resistor Cube</title>
 				<link>https://eddieliberato.github.io/blog/2026-06-01-resistor-cube/</link>

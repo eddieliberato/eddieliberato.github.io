@@ -10,14 +10,35 @@
 		
 		
 		
-			<lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Wed, 01 Jul 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="https://eddieliberato.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Electronics</title>
 				<link>https://eddieliberato.github.io/tags/electronics/</link>
-				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+				<pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
 				<guid>https://eddieliberato.github.io/tags/electronics/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Julia</title>
+				<link>https://eddieliberato.github.io/tags/julia/</link>
+				<pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/tags/julia/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Puzzles</title>
+				<link>https://eddieliberato.github.io/tags/puzzles/</link>
+				<pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/tags/puzzles/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Python</title>
+				<link>https://eddieliberato.github.io/tags/python/</link>
+				<pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/tags/python/</guid>
 				<description></description>
 			</item>
 			<item>
@@ -25,20 +46,6 @@
 				<link>https://eddieliberato.github.io/tags/maxima/</link>
 				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
 				<guid>https://eddieliberato.github.io/tags/maxima/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Puzzles</title>
-				<link>https://eddieliberato.github.io/tags/puzzles/</link>
-				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-				<guid>https://eddieliberato.github.io/tags/puzzles/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Python</title>
-				<link>https://eddieliberato.github.io/tags/python/</link>
-				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-				<guid>https://eddieliberato.github.io/tags/python/</guid>
 				<description></description>
 			</item>
 			<item>

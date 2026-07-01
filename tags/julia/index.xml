@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Puzzles on Edi Liberato blog</title>
-		<link>https://eddieliberato.github.io/tags/puzzles/</link>
-		<description>Recent content in Puzzles on Edi Liberato blog</description>
+		<title>Julia on Edi Liberato blog</title>
+		<link>https://eddieliberato.github.io/tags/julia/</link>
+		<description>Recent content in Julia on Edi Liberato blog</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
 		
@@ -12,20 +12,13 @@
 		
 			<lastBuildDate>Wed, 01 Jul 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="https://eddieliberato.github.io/tags/puzzles/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://eddieliberato.github.io/tags/julia/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Infinite Resistors Grid</title>
 				<link>https://eddieliberato.github.io/blog/2026-07-01-infinite-resistor/</link>
 				<pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
 				<guid>https://eddieliberato.github.io/blog/2026-07-01-infinite-resistor/</guid>
 				<description>&lt;p&gt;On this infinite grid of ideal one-ohm resistors, what&amp;rsquo;s the equivalent resistance between the two marked nodes?&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Pesky Resistor Cube</title>
-				<link>https://eddieliberato.github.io/blog/2026-06-01-resistor-cube/</link>
-				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-				<guid>https://eddieliberato.github.io/blog/2026-06-01-resistor-cube/</guid>
-				<description>&lt;p&gt;Even my grandma knows the answer to this one when all the resistors are the same. But what if they are not?&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>

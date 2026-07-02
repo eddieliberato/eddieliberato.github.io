@@ -89,15 +89,6 @@
     <loc>https://eddieliberato.github.io/blog/2022-03-10-jetson-nano/</loc>
     <lastmod>2022-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://eddieliberato.github.io/blog/2022-02-28-direct-stiffness-method/</loc>
-    <lastmod>2022-02-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://eddieliberato.github.io/tags/fea/</loc>
-    <lastmod>2022-02-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://eddieliberato.github.io/tags/mechanics/</loc>
-    <lastmod>2022-02-28T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://eddieliberato.github.io/blog/2020-09-21-gears/</loc>
     <lastmod>2020-09-21T00:00:00+00:00</lastmod>
   </url><url>
@@ -119,6 +110,9 @@
     <loc>https://eddieliberato.github.io/tags/materials/</loc>
     <lastmod>2020-05-14T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://eddieliberato.github.io/tags/mechanics/</loc>
+    <lastmod>2020-05-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://eddieliberato.github.io/about/</loc>
     <lastmod>2019-10-29T13:49:23+06:00</lastmod>
   </url><url>
@@ -127,5 +121,11 @@
   </url><url>
     <loc>https://eddieliberato.github.io/blog/2018-06-26-cadquery-chess-set/</loc>
     <lastmod>2018-06-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eddieliberato.github.io/blog/2016-11-16-direct-stiffness-method/</loc>
+    <lastmod>2016-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eddieliberato.github.io/tags/fea/</loc>
+    <lastmod>2016-11-16T00:00:00+00:00</lastmod>
   </url>
 </urlset>

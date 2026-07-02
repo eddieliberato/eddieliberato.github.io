@@ -98,20 +98,6 @@
 				<description></description>
 			</item>
 			<item>
-				<title>FEA</title>
-				<link>https://eddieliberato.github.io/tags/fea/</link>
-				<pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
-				<guid>https://eddieliberato.github.io/tags/fea/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Mechanics</title>
-				<link>https://eddieliberato.github.io/tags/mechanics/</link>
-				<pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
-				<guid>https://eddieliberato.github.io/tags/mechanics/</guid>
-				<description></description>
-			</item>
-			<item>
 				<title>Libfive</title>
 				<link>https://eddieliberato.github.io/tags/libfive/</link>
 				<pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
@@ -137,6 +123,20 @@
 				<link>https://eddieliberato.github.io/tags/materials/</link>
 				<pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
 				<guid>https://eddieliberato.github.io/tags/materials/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Mechanics</title>
+				<link>https://eddieliberato.github.io/tags/mechanics/</link>
+				<pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/tags/mechanics/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>FEA</title>
+				<link>https://eddieliberato.github.io/tags/fea/</link>
+				<pubDate>Wed, 16 Nov 2016 00:00:00 +0000</pubDate>
+				<guid>https://eddieliberato.github.io/tags/fea/</guid>
 				<description></description>
 			</item>
 	</channel>

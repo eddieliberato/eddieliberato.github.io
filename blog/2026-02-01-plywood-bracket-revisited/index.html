@@ -128,7 +128,7 @@
         <img src="https://eddieliberato.github.io/images/post/2026-02-plywood-bracket/plywood-connectors.svg" class="img mb-4" alt="Plywood Brackets Revisited">
         
         <div class ="tags-border">
-          <div class="content mb-5">
+          <div class="content mb-3">
             <p>So much has changed in cadquery since I last used it in around 2022. Now we have the <strong>sketch API</strong> and <strong>assembly support</strong></p>
 <p>Since I wasn’t completely happy with my original <a href="https://eddieliberato.github.io/blog/2022-06-26-cadquery-models-collection/#plywood-connectors-13052020">plywood brackets</a>, I revised the model, this time taking advantage of the Sketch API.</p>
 <p>The changes I wanted to implement were increased bearing area for the plywood board and small notches where the board corners rest. Since those locations act as <strong>stress concentrators</strong>, that’s where this component tends to fail and relieving stress there is important.</p>
@@ -136,7 +136,7 @@
 <p>While everything could arguably be implemented using only boolean operations on 3D features, it was more straighfoward to do it using the 2D sketch methods.</p>
 
 
-<div id="threejs-1782978463060588193"
+<div id="threejs-1783030137295069372"
      class="threejs-viewer"
      style="width: 100%;
             height: 400px;"
@@ -152,7 +152,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
-const container = document.getElementById('threejs-1782978463060588193');
+const container = document.getElementById('threejs-1783030137295069372');
 
 requestAnimationFrame(() => {
   const width = container.offsetWidth || 600;
@@ -423,9 +423,9 @@ requestAnimationFrame(() => {
           </li>
 
           
-          <li class="mb-2"><i class="ti-location-pin mr-2 text-primary"></i>Zürich, Switzerland</li>
           
-          </li>
+          
+          
 
         </ul>
     
@@ -486,9 +486,6 @@ requestAnimationFrame(() => {
                                             href="/tags/games">Games</a>
             </li>
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-                                            href="/tags/julia">Julia</a>
-            </li>
-            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
                                             href="/tags/libfive">Libfive</a>
             </li>
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
@@ -521,12 +518,25 @@ requestAnimationFrame(() => {
             <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
                                             href="/tags/scheme">Scheme</a>
             </li>
-            <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-                                            href="/tags/vms">Vms</a>
-            </li>
             
         </ul>
     </div>
+
+
+<div class="col-lg-8 mb-4 border-top pt-3">
+  <div class="d-flex justify-content-between align-items-center">
+    <div>
+      
+        <i class="ti-location-pin mr-2 text-primary"></i>Zürich, Switzerland
+      
+    </div>
+
+    <div class="text-right">
+      &copy; 2026. All rights reserved
+    </div>
+  </div>
+</div>
+
 
     </div>
   </div>
